@@ -21,14 +21,14 @@ class TransformerNet(nn.Module):
         self.in4 = nn.InstanceNorm2d(64, affine=True)
         self.deconv2 = UpSample(64, 32, kernel_size=3, stride=1, upsample=2)
         self.in5 = nn.InstanceNorm2d(32, affine=True)
-        self.deconv4 = nn.Conv2d(32, 3, kernel_size=9, stride=1)
+        self.deconv3 = Convlayer(32, 3, kernel_size=9, stride=1)
 
-        self.relu = nn.ReLU
+        self.relu = nn.ReLU()
 
     def forward(self, x):
         out = self.relu(self.in1(self.conv1(x)))
-        out = self.relu(self.in2(self.conv2(x)))
-        out = self.relu(self.in3(self.conv3(x)))
+        out = self.relu(self.in2(self.conv2(out)))
+        out = self.relu(self.in3(self.conv3(out)))
 
         out = self.res1(out)
         out = self.res2(out)
@@ -38,7 +38,7 @@ class TransformerNet(nn.Module):
 
         out = self.relu(self.in4(self.deconv1(out)))
         out = self.relu(self.in5(self.deconv2(out)))
-        out = self.deconv4(out)
+        out = self.deconv3(out)
 
         return out
 
@@ -61,7 +61,7 @@ class ResBlock(nn.Module):
         self.in1 = nn.InstanceNorm2d(channels, affine=True)
         self.conv2 = Convlayer(channels, channels, kernel_size=3, stride=1)
         self.in2 = nn.InstanceNorm2d(channels, affine=True)
-        self.relu = nn.ReLU
+        self.relu = nn.ReLU()
 
     def forward(self, x):
         out = self.relu(self.in1(self.conv1(x)))

@@ -13,7 +13,7 @@ from torchvision import transforms, datasets
 
 from transformer_net import TransformerNet
 from vgg import Vgg16
-from utils import load_image, normalize_batch, gram
+from utils import load_image, normalize_batch, gram, save_image
 
 def check_paths(args):
     try:
@@ -29,7 +29,7 @@ def train(args):
     device = torch.device("cuda" if args.cuda else "cpu")
 
     # set random seed
-    np.random.seed(0)
+    np.random.seed(args.seed)
     torch.manual_seed(args.seed)
 
     # dataset and dataloader
@@ -112,6 +112,9 @@ def train(args):
             total_loss.backward()
             optimizer.step()
 
+            agg_content_loss += content_loss.item()
+            agg_style_loss += style_loss.item()
+
             if (batch_id + 1) % args.log_interval == 0:
                 mesg = "{}\tEpoch {}:\t[{}/{}]\tcontent loss: {:.6f}\tstyle loss: {:.6f}\tperceptual loss: {:.6f}".format(
                     time.ctime(), e + 1, count, len(train_dataset),
@@ -124,12 +127,44 @@ def train(args):
             if args.checkpoint_model_dir is not None and (batch_id + 1) % args.checkpoint_interval == 0:
                 model.eval().cpu()
                 ckpt_model_filename = "ckpt_epoch_" + str(e) + "_batch_id_" + str(batch_id + 1) + ".pth"
-                ckpt_model_path = os.path.join(args.checkpoint_model_dir, ckpt_model_filename)
+                ckpt_model_path = os.path.join(args.checkpoint_model_dir + ckpt_model_filename)
                 torch.save(model.state_dict(), ckpt_model_path)
+                # 别忘了 .train() 因为前面有 .eval()
                 model.to(device).train()
 
+    # save model
+    model.eval().cpu()
+    save_model_filename = "epoch_" + str(args.epochs) + "_" + str(time.ctime()).replace(' ', '_') + "_" + str(
+        args.content_weight) + '_' + str(args.style_weight) + ".model"
+    save_model_path = os.path.join(args.save_model_dir, save_model_filename)
+    torch.save(model.state_dict(), save_model_path)
+
+    print("\nDone, trained model saved at", save_model_path)
+
 def stylize(args):
-    pass
+    device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+    content_image = load_image(args.content_image, args.content_scale)
+    content_transform = transforms.Compose([
+        transforms.ToTensor(),
+        transforms.Lambda(lambda x: x.mul(255))
+    ])
+    content_image = content_transform(content_image)
+    content_image = content_image.unsqueeze(0).to(device)
+
+    with torch.no_grad():
+        style_model = TransformerNet()
+        state_dict = torch.load(args.model)
+
+        for k in list(state_dict.keys()):
+            if re.search(r'in\d+\.running_(mean|var)$', k):
+                del state_dict[k]
+
+        style_model.load_state_dict(state_dict)
+        style_model.to(device)
+        style_model.eval()
+        output = style_model(content_image).cpu()
+
+    save_image(args.output_image, output[0])
 
 def main():
     main_arg_parser = argparse.ArgumentParser(description="parser for fast-neural-style")
