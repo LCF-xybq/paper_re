@@ -1,4 +1,4 @@
-import argparse
+import json
 import os
 import sys
 import torch
@@ -14,6 +14,16 @@ from torchvision import transforms, datasets
 from transformer_net import TransformerNet
 from vgg import Vgg16
 from utils import load_image, normalize_batch, gram, save_image
+
+class JSONObject:
+    def __init__(self, d):
+        self.__dict__ = d
+
+def getargs():
+    with open('style_transformer.json', 'r') as f:
+        data = json.load(f, object_hook=JSONObject)
+
+        return data
 
 def check_paths(args):
     try:
@@ -85,8 +95,6 @@ def train(args):
             x = x.to(device)
             y = model(x)
 
-            # 该任务的loss在优化迭代过程中会出255的范围
-            # 所以要裁一下
             x = normalize_batch(x)
             y = normalize_batch(y)
 
@@ -153,13 +161,25 @@ def stylize(args):
 
     with torch.no_grad():
         style_model = TransformerNet()
-        state_dict = torch.load(args.model)
+        saved_dict = torch.load(args.model)
 
-        for k in list(state_dict.keys()):
+        for k in list(saved_dict.keys()):
             if re.search(r'in\d+\.running_(mean|var)$', k):
-                del state_dict[k]
+                del saved_dict[k]
 
-        style_model.load_state_dict(state_dict)
+        raw_dict = style_model.state_dict()
+        change_map = {}
+        for old_k, new_k in zip(saved_dict.keys(), raw_dict.keys()):
+            change_map[old_k] = new_k
+
+        for k in list(saved_dict.keys()):
+            new_k = change_map[k]
+            saved_dict.update({new_k: saved_dict.pop(k)})
+
+        for k1, k2 in zip(saved_dict, raw_dict):
+            assert k1 == k2
+
+        style_model.load_state_dict(saved_dict)
         style_model.to(device)
         style_model.eval()
         output = style_model(content_image).cpu()
@@ -167,64 +187,13 @@ def stylize(args):
     save_image(args.output_image, output[0])
 
 def main():
-    main_arg_parser = argparse.ArgumentParser(description="parser for fast-neural-style")
-    subparsers = main_arg_parser.add_subparsers(title="subcommands", dest="subcommand")
+    args = getargs()
 
-    train_arg_parser = subparsers.add_parser("train", help="parser for training arguments")
-    train_arg_parser.add_argument("--epochs", type=int, default=2,
-                                  help="number of training epochs, default is 2")
-    train_arg_parser.add_argument("--batch-size", type=int, default=4,
-                                  help="batch size for training, default is 4")
-    train_arg_parser.add_argument("--dataset", type=str, required=True,
-                                  help="path to training dataset, the path should point to a folder "
-                                       "containing another folder with all the training images")
-    train_arg_parser.add_argument("--style-image", type=str, default="images/style-images/mosaic.jpg",
-                                  help="path to style-image")
-    train_arg_parser.add_argument("--save-model-dir", type=str, required=True,
-                                  help="path to folder where trained model will be saved.")
-    train_arg_parser.add_argument("--checkpoint-model-dir", type=str, default=None,
-                                  help="path to folder where checkpoints of trained models will be saved")
-    train_arg_parser.add_argument("--image-size", type=int, default=256,
-                                  help="size of training images, default is 256 X 256")
-    train_arg_parser.add_argument("--style-size", type=int, default=None,
-                                  help="size of style-image, default is the original size of style image")
-    train_arg_parser.add_argument("--cuda", type=int, required=True,
-                                  help="set it to 1 for running on GPU, 0 for CPU")
-    train_arg_parser.add_argument("--seed", type=int, default=42,
-                                  help="random seed for training")
-    train_arg_parser.add_argument("--content-weight", type=float, default=1e5,
-                                  help="weight for content-loss, default is 1e5")
-    train_arg_parser.add_argument("--style-weight", type=float, default=1e10,
-                                  help="weight for style-loss, default is 1e10")
-    train_arg_parser.add_argument("--lr", type=float, default=1e-3,
-                                  help="learning rate, default is 1e-3")
-    train_arg_parser.add_argument("--log-interval", type=int, default=500,
-                                  help="number of images after which the training loss is logged, default is 500")
-    train_arg_parser.add_argument("--checkpoint-interval", type=int, default=2000,
-                                  help="number of batches after which a checkpoint of the trained model will be created")
-
-    eval_arg_parser = subparsers.add_parser("eval", help="parser for evaluation/stylizing arguments")
-    eval_arg_parser.add_argument("--content-image", type=str, required=True,
-                                 help="path to content image you want to stylize")
-    eval_arg_parser.add_argument("--content-scale", type=float, default=None,
-                                 help="factor for scaling down the content image")
-    eval_arg_parser.add_argument("--output-image", type=str, required=True,
-                                 help="path for saving the output image")
-    eval_arg_parser.add_argument("--model", type=str, required=True,
-                                 help="saved model to be used for stylizing the image. If file ends in .pth - PyTorch path is used, if in .onnx - Caffe2 path")
-    eval_arg_parser.add_argument("--cuda", type=int, required=True,
-                                 help="set it to 1 for running on GPU, 0 for CPU")
-
-    args = main_arg_parser.parse_args()
-
-    if args.subcommand is None:
-        print("ERROR: specify either train or eval")
-        sys.exit(1)
     if args.cuda and not torch.cuda.is_available():
         print("ERROR: cuda is not available, try running on CPU")
         sys.exit(1)
 
-    if args.subcommand == "train":
+    if args.train:
         check_paths(args)
         train(args)
     else:

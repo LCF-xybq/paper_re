@@ -1,0 +1,5 @@
+{
+  "epochs": 2,
+  "batch": 4,
+  "style_image": "D:\\Program_self\\paper_re\\perceptual_loss\\images\\style-images\\candy.jpg"
+}
