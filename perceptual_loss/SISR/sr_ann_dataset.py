@@ -4,8 +4,8 @@ from base_sr_dataset import BaseSRDataset
 
 class SRAnnDataset(BaseSRDataset):
     def __init__(self, lq_folder, gt_folder, ann_file,
-                 transform, scale, test_mode=False,):
-        super(SRAnnDataset, self).__init__(transform, scale, test_mode)
+                 pipeline, scale, test_mode=False,):
+        super(SRAnnDataset, self).__init__(pipeline, scale, test_mode)
         self.lq_folder = str(lq_folder)
         self.gt_folder = str(gt_folder)
         self.ann_file = str(ann_file)

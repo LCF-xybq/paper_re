@@ -6,8 +6,8 @@ IMG_EXTENSIONS = ('.jpg', '.JPG', '.jpeg', '.JPEG', '.png', '.PNG', '.ppm',
                   '.PPM', '.bmp', '.BMP', '.tif', '.TIF', '.tiff', '.TIFF')
 
 class BaseSRDataset(BaseDataset):
-    def __init__(self, transform, scale, test_mode=False):
-        super(BaseSRDataset, self).__init__(transform, test_mode)
+    def __init__(self, pipeline, scale, test_mode=False):
+        super(BaseSRDataset, self).__init__(pipeline, test_mode)
         self.scale = scale
 
     @staticmethod
@@ -27,7 +27,7 @@ class BaseSRDataset(BaseDataset):
     def __getitem__(self, idx):
         results = copy.deepcopy(self.data_infos[idx])
         results['scale'] = self.scale
-        return self.transform(results)
+        return self.pipeline(results)
 
 # if __name__ == '__main__':
 #     pth = r'D:\Program_self\paper_re\data\SR\train\lq'

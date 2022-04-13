@@ -3,10 +3,10 @@ from abc import abstractmethod
 import copy
 
 class BaseDataset(Dataset):
-    def __init__(self, transform, test_mode=False):
+    def __init__(self, pipeline, test_mode=False):
         super(BaseDataset, self).__init__()
         self.test_mode = test_mode
-        self.transform = transform
+        self.pipeline = pipeline
 
     @abstractmethod
     def load_annotations(self):
@@ -19,11 +19,11 @@ class BaseDataset(Dataset):
             dict: Returned training batch.
         """
         results = copy.deepcopy(self.data_infos[idx])
-        return self.transform(results)
+        return self.pipeline(results)
 
     def prepare_test_data(self, idx):
         results = copy.deepcopy(self.data_infos[idx])
-        return self.transform(results)
+        return self.pipeline(results)
 
     def __len__(self):
         return len(self.data_infos)
