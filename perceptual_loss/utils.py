@@ -1,5 +1,6 @@
 from PIL import Image
 import torch
+import numpy as np
 
 def load_image(filename, size=None, scale=None):
     img = Image.open(filename).convert('RGB')
@@ -34,3 +35,10 @@ def gram(y):
     A_T = A.transpose(1, 2)
     matrix = A.bmm(A_T) / (c * h * w)
     return matrix
+
+def tensorToImg(tensor):
+    # image_numpy = tensor[0].cpu().float().numpy()
+    image_numpy = tensor[0].detach().float().numpy()
+    image_numpy = np.transpose(image_numpy, (1, 2, 0))
+    img = image_numpy.astype(np.uint8)
+    return img

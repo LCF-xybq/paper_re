@@ -4,15 +4,10 @@ import matplotlib.pyplot as plt
 import numpy as np
 from vgg import Vgg16
 import torch.nn as nn
+from .utils import tensorToImg
 
 pth = r'D:\Program_self\paper_re\perceptual_loss\images\content-images\amber.jpg'
 
-def tensorToImg(tensor):
-    # image_numpy = tensor[0].cpu().float().numpy()
-    image_numpy = tensor[0].detach().float().numpy()
-    image_numpy = np.transpose(image_numpy, (1, 2, 0))
-    img = image_numpy.astype(np.uint8)
-    return img
 
 transform = transforms.Compose([
         transforms.Resize(256),
