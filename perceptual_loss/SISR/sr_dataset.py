@@ -61,11 +61,13 @@ class SRDataset(Dataset):
 #     transform = transforms.Compose([
 #         transforms.Resize(300),
 #         transforms.CenterCrop(288),
+#         transforms.ToTensor(),
 #         transforms.Normalize(mean=[0.4731, 0.4444, 0.4033],
 #                              std=[0.2466, 0.2401, 0.2602]),
-#         transforms.ToTensor()
 #     ])
 #
 #     train_dataset = SRDataset(ann_file=ann_pth, scale=4, transform=transform)
 #     train_loader = DataLoader(train_dataset, batch_size=4)
-#     # get_mean_std(train_dataset)
+#
+#     for i, data in enumerate(train_loader):
+#         print(i, len(data['lr']))

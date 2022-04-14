@@ -1,0 +1,17 @@
+{
+  "train": true,
+  "epochs": 10,
+  "batch_size": 4,
+  "scale": 4,
+  "ann_file": "D:\\Program_self\\paper_re\\data\\SR\\ann.txt",
+  "save_model_dir": "D:\\Program_self\\paper_re\\saved_model",
+  "checkpoint_model_dir": "D:\\Program_self\\paper_re\\ckpt",
+  "cuda": 1,
+  "seed": 42,
+  "content_weight": 1e5,
+  "lr": 1e-3,
+  "log_interval": 2,
+  "checkpoint_interval": 2,
+  "output_image": "D:\\Program_self\\paper_re\\perceptual_loss\\results\\sisr\\resultx4.jpg",
+  "model": "D:\\Program_self\\paper_re\\saved_model\\sisrx4.pth"
+}
