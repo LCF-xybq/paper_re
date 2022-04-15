@@ -1,5 +1,5 @@
 {
-  "train": true,
+  "train": false,
   "epochs": 10,
   "batch_size": 4,
   "scale": 4,
@@ -12,6 +12,7 @@
   "lr": 1e-3,
   "log_interval": 2,
   "checkpoint_interval": 2,
+  "lr_image_test": "D:\\Program_self\\paper_re\\data\\SR\\test\\lr\\img_005_SRF_4_LR.png",
   "output_image": "D:\\Program_self\\paper_re\\perceptual_loss\\results\\sisr\\resultx4.jpg",
-  "model": "D:\\Program_self\\paper_re\\saved_model\\sisrx4.pth"
+  "model": "D:\\Program_self\\paper_re\\saved_model\\epoch_10.model"
 }
