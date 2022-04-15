@@ -32,11 +32,13 @@ def hist_match(src , ref):
     return interp_t_values[bin_idx].reshape(src_shape)
 
 if __name__ == '__main__':
-    blur_pth = r'D:\Program_self\paper_re\data\SR\train\lr\0001x4.png'
-    hr_pth = r'D:\Program_self\paper_re\data\SR\train\hr\0001.png'
+    lr_pth = r'D:\Program_self\paper_re\data\SR\test\lr\img_005_SRF_4_LR.png'
+    output_pth = r'D:\Program_self\paper_re\perceptual_loss\results\sisr\resultx4.jpg'
 
-    img_raw = cv2.imread(blur_pth)
-    img_ref = cv2.imread(hr_pth)
+    img_raw = cv2.imread(output_pth)
+    img_ref = cv2.imread(lr_pth)
+
+    plt_hist(img_ref)
 
     result = np.copy(img_raw)
     for i in range(3):
