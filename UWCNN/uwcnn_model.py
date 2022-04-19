@@ -38,10 +38,3 @@ class Block(nn.Module):
         out3 = self.relu(self.conv3(out2))
         out = torch.cat([out1, out2, out3, x], dim=1)
         return out
-
-
-# if __name__ == '__main__':
-#     model1 = UWCNN()
-#     print(model1)
-#     num1 = [p.numel() for p in model1.parameters()]
-#     print(model1.state_dict()['block1.conv1.weight'])

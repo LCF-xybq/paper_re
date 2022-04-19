@@ -4,7 +4,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 from vgg import Vgg16
 import torch.nn as nn
-from .utils import tensorToImg
+from .util import tensorToImg
 
 pth = r'D:\Program_self\paper_re\perceptual_loss\images\content-images\amber.jpg'
 

@@ -13,7 +13,7 @@ from torchvision import transforms, datasets
 
 from transformer_net import TransformerNet
 from vgg import Vgg16
-from utils import load_image, normalize_batch, gram, save_image
+from util import load_image, normalize_batch, gram, save_image
 
 class JSONObject:
     def __init__(self, d):

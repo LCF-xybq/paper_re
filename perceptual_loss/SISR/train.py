@@ -17,7 +17,7 @@ from torch.utils.data import DataLoader
 from sisr_net import SISRNet
 from sr_dataset import SRDataset
 from perceptual_loss.vgg import Vgg16
-from perceptual_loss.utils import load_image, save_image
+from perceptual_loss.util import load_image, save_image
 
 class JSONObject:
     def __init__(self, d):
