@@ -16,6 +16,7 @@ from uwcnn_model import UWCNN
 from utils import get_root_logger, Visualizer, normimage
 from ssim_loss import SSIMLoss
 from util import resume, load, save_latest, save_epoch
+from utils.trans import *
 
 class JSONObject:
     def __init__(self, d):
@@ -67,14 +68,14 @@ def train(args):
                 sum(num_ele), sum(num_ele_grad))
 
     transform = transforms.Compose([
-        transforms.Resize(550),
-        transforms.RandomCrop(512),
-        transforms.RandomHorizontalFlip(),
-        transforms.RandomVerticalFlip(),
-        transforms.ToTensor(),
-        transforms.Normalize(mean=[0.5, 0.5, 0.5],
-                             std=[0.5, 0.5, 0.5]),
+        Resize(550),
+        RandomCrop(512),
+        RandomFlip(),
+        ToTensor(),
+        Normalize(mean=[0.5, 0.5, 0.5],
+                  std=[0.5, 0.5, 0.5]),
     ])
+
     dataset = UWCNNData(ann_file=args.ann_file, transform=transform)
     batch_size = args.num_gpus * args.samples_per_gpu
     num_workers = args.num_gpus * args.workers_per_gpu
@@ -104,7 +105,7 @@ def train(args):
             ite_num = ite_num + 1
             ite_num1val = ite_num * args.samples_per_gpu
 
-            raw, ref = data['raw'], data['ref']
+            raw, ref = data['lr'], data['gt']
             raw = raw.to(device)
             ref = ref.to(device)
             output = model(raw)
