@@ -1,4 +1,4 @@
-from ssim_loss import SSIMLoss
+from loss.ssim_loss import SSIMLoss
 from uw_dataset import UWCNNData
 from torchvision import transforms
 from torch.utils.data import DataLoader

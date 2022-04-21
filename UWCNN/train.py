@@ -9,13 +9,12 @@ import torch.optim as optim
 import torch.nn as nn
 
 from torch.utils.data import DataLoader
-from torchvision import transforms
 
 from uw_dataset import UWCNNData
 from uwcnn_model import UWCNN
 from utils import get_root_logger, Visualizer, normimage
-from ssim_loss import SSIMLoss
-from util import resume, load, save_latest, save_epoch
+from loss.ssim_loss import SSIMLoss
+from utils.checkpoint import resume, load, save_latest, save_epoch
 from utils.trans import *
 
 class JSONObject:

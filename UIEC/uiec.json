@@ -1,0 +1,23 @@
+{
+  "train": true,
+  "epochs": 50,
+  "ann_file": "D:\\Program_self\\paper_re\\data\\UW\\ann.txt",
+  "num_gpus": 1,
+  "samples_per_gpu": 4,
+  "workers_per_gpu": 4,
+  "val_samples_per_gpu": 1,
+  "ssim_weight": 1.0,
+  "l1_weight": 1.0,
+  "hsv_weight": 1.0,
+  "perc_weight": 0.5,
+  "lam_pixel_20": 0.5,
+  "lam_whole_20": 0.5,
+  "lam_pixel_last": 0.1,
+  "lam_whole_last": 0.9,
+  "resume_from": null,
+  "load_from": null,
+  "save_pth": "D:\\Program_self\\paper_re\\saved_model\\UIEC\\",
+  "ckpt": "D:\\Program_self\\paper_re\\ckpt\\UIEC\\",
+  "work_dir": "D:\\Program_self\\paper_re\\ckpt\\UIEC\\log\\",
+  "log_level": "INFO"
+}
