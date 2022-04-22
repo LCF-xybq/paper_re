@@ -3,17 +3,17 @@ from torch.utils.data import Dataset
 from PIL import Image
 
 def load_ann(ann_file):
-    data_pth = []
+    data = []
     with open(ann_file, 'r') as f:
         for line in f:
             raw_pth, ref_pth = line.strip().split(' ')
             lr = Image.open(raw_pth).convert('RGB')
             gt = Image.open(ref_pth).convert('RGB')
-            data_pth.append({
+            data.append({
                 "lr": lr,
                 "gt": gt
             })
-    return data_pth
+    return data
 
 class UWCNNData(Dataset):
     def __init__(self, ann_file, transform):

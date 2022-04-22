@@ -63,7 +63,7 @@ def train(args):
 
     num_ele = [p.numel() for p in model.parameters()]
     num_ele_grad = [p.numel() for p in model.parameters() if p.requires_grad]
-    logger.info('Total Parameters: %d, Trainable Parameters: %s',
+    logger.info('Total Parameters: %d, Trainable Parameters: %d',
                 sum(num_ele), sum(num_ele_grad))
 
     transform = transforms.Compose([
