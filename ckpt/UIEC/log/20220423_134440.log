@@ -1,0 +1,605 @@
+2022-04-23 13:44:40,932 - TJU_VIPLab - INFO - UIEC2-Net: CNN-based Underwater Image Enhancement Using Two Color Space
+
+2022-04-23 13:44:42,102 - TJU_VIPLab - INFO - Working on cuda
+2022-04-23 13:44:45,393 - TJU_VIPLab - INFO - Tota Parameters: 647230, Training Parameters: 647230
+2022-04-23 13:44:46,482 - TJU_VIPLab - INFO - 
+Start Epoch 1 -----------
+2022-04-23 13:44:52,286 - TJU_VIPLab - INFO - Epoch 1, [1/500] lr: 0.001000 time: 2.480 loss_l1: 0.556854 loss_ssim: 0.996000 loss_hsv: 0.098271 loss_perceptual: 1.554354 loss: 2.428302
+2022-04-23 13:44:52,935 - TJU_VIPLab - INFO - Epoch 1, [2/500] lr: 0.001000 time: 0.000 loss_l1: 0.493454 loss_ssim: 0.999903 loss_hsv: 0.116889 loss_perceptual: 1.594202 loss: 2.407347
+2022-04-23 13:44:53,582 - TJU_VIPLab - INFO - Epoch 1, [3/500] lr: 0.001000 time: 0.000 loss_l1: 0.385553 loss_ssim: 1.018121 loss_hsv: 0.059294 loss_perceptual: 2.025069 loss: 2.475502
+2022-04-23 13:44:54,214 - TJU_VIPLab - INFO - Epoch 1, [4/500] lr: 0.001000 time: 0.001 loss_l1: 0.384843 loss_ssim: 0.970035 loss_hsv: 0.135005 loss_perceptual: 1.616209 loss: 2.297987
+2022-04-23 13:44:54,846 - TJU_VIPLab - INFO - Epoch 1, [5/500] lr: 0.001000 time: 0.002 loss_l1: 0.400827 loss_ssim: 0.969876 loss_hsv: 0.138732 loss_perceptual: 2.291419 loss: 2.655144
+2022-04-23 13:44:55,602 - TJU_VIPLab - INFO - Epoch 1, [6/500] lr: 0.001000 time: 0.127 loss_l1: 0.336430 loss_ssim: 0.913440 loss_hsv: 0.097827 loss_perceptual: 1.933349 loss: 2.314371
+2022-04-23 13:44:56,233 - TJU_VIPLab - INFO - Epoch 1, [7/500] lr: 0.001000 time: 0.000 loss_l1: 0.402952 loss_ssim: 0.961552 loss_hsv: 0.103984 loss_perceptual: 1.550442 loss: 2.243710
+2022-04-23 13:44:56,857 - TJU_VIPLab - INFO - Epoch 1, [8/500] lr: 0.001000 time: 0.000 loss_l1: 0.437039 loss_ssim: 0.937783 loss_hsv: 0.176748 loss_perceptual: 1.796686 loss: 2.449914
+2022-04-23 13:44:57,472 - TJU_VIPLab - INFO - Epoch 1, [9/500] lr: 0.001000 time: 0.000 loss_l1: 0.474782 loss_ssim: 1.058767 loss_hsv: 0.138573 loss_perceptual: 1.513507 loss: 2.428875
+2022-04-23 13:44:58,092 - TJU_VIPLab - INFO - Epoch 1, [10/500] lr: 0.001000 time: 0.000 loss_l1: 0.425325 loss_ssim: 0.922373 loss_hsv: 0.099517 loss_perceptual: 1.089237 loss: 1.991833
+2022-04-23 13:44:58,662 - TJU_VIPLab - INFO - 
+Start Epoch 2 -----------
+2022-04-23 13:45:01,362 - TJU_VIPLab - INFO - Epoch 2, [11/500] lr: 0.001000 time: 2.445 loss_l1: 0.425068 loss_ssim: 0.871755 loss_hsv: 0.082971 loss_perceptual: 1.176997 loss: 1.968293
+2022-04-23 13:45:01,992 - TJU_VIPLab - INFO - Epoch 2, [12/500] lr: 0.001000 time: 0.000 loss_l1: 0.438238 loss_ssim: 0.909628 loss_hsv: 0.109436 loss_perceptual: 1.233299 loss: 2.073951
+2022-04-23 13:45:02,612 - TJU_VIPLab - INFO - Epoch 2, [13/500] lr: 0.001000 time: 0.000 loss_l1: 0.371669 loss_ssim: 0.938869 loss_hsv: 0.068209 loss_perceptual: 1.821582 loss: 2.289537
+2022-04-23 13:45:03,232 - TJU_VIPLab - INFO - Epoch 2, [14/500] lr: 0.001000 time: 0.000 loss_l1: 0.364147 loss_ssim: 0.927250 loss_hsv: 0.142664 loss_perceptual: 1.346328 loss: 2.107225
+2022-04-23 13:45:03,861 - TJU_VIPLab - INFO - Epoch 2, [15/500] lr: 0.001000 time: 0.000 loss_l1: 0.386409 loss_ssim: 0.917359 loss_hsv: 0.140710 loss_perceptual: 2.062432 loss: 2.475694
+2022-04-23 13:45:04,632 - TJU_VIPLab - INFO - Epoch 2, [16/500] lr: 0.001000 time: 0.135 loss_l1: 0.322569 loss_ssim: 0.848050 loss_hsv: 0.091203 loss_perceptual: 1.802144 loss: 2.162894
+2022-04-23 13:45:05,292 - TJU_VIPLab - INFO - Epoch 2, [17/500] lr: 0.001000 time: 0.000 loss_l1: 0.382555 loss_ssim: 0.938977 loss_hsv: 0.111501 loss_perceptual: 1.469435 loss: 2.167751
+2022-04-23 13:45:05,917 - TJU_VIPLab - INFO - Epoch 2, [18/500] lr: 0.001000 time: 0.000 loss_l1: 0.436045 loss_ssim: 0.923029 loss_hsv: 0.176614 loss_perceptual: 1.706555 loss: 2.388966
+2022-04-23 13:45:06,532 - TJU_VIPLab - INFO - Epoch 2, [19/500] lr: 0.001000 time: 0.000 loss_l1: 0.450435 loss_ssim: 0.991752 loss_hsv: 0.136047 loss_perceptual: 1.287328 loss: 2.221898
+2022-04-23 13:45:07,162 - TJU_VIPLab - INFO - Epoch 2, [20/500] lr: 0.001000 time: 0.000 loss_l1: 0.389697 loss_ssim: 0.857825 loss_hsv: 0.118793 loss_perceptual: 1.093559 loss: 1.913095
+2022-04-23 13:45:07,635 - TJU_VIPLab - INFO - 
+Start Epoch 3 -----------
+2022-04-23 13:45:10,242 - TJU_VIPLab - INFO - Epoch 3, [21/500] lr: 0.001000 time: 2.234 loss_l1: 0.506040 loss_ssim: 0.922583 loss_hsv: 0.095216 loss_perceptual: 1.070729 loss: 2.059204
+2022-04-23 13:45:10,867 - TJU_VIPLab - INFO - Epoch 3, [22/500] lr: 0.001000 time: 0.000 loss_l1: 0.447200 loss_ssim: 0.897049 loss_hsv: 0.120074 loss_perceptual: 1.246638 loss: 2.087643
+2022-04-23 13:45:11,492 - TJU_VIPLab - INFO - Epoch 3, [23/500] lr: 0.001000 time: 0.000 loss_l1: 0.380604 loss_ssim: 0.972255 loss_hsv: 0.074366 loss_perceptual: 1.498366 loss: 2.176407
+2022-04-23 13:45:12,113 - TJU_VIPLab - INFO - Epoch 3, [24/500] lr: 0.001000 time: 0.000 loss_l1: 0.366069 loss_ssim: 0.878852 loss_hsv: 0.136401 loss_perceptual: 1.348915 loss: 2.055780
+2022-04-23 13:45:12,731 - TJU_VIPLab - INFO - Epoch 3, [25/500] lr: 0.001000 time: 0.000 loss_l1: 0.404801 loss_ssim: 0.878221 loss_hsv: 0.141372 loss_perceptual: 1.731513 loss: 2.290149
+2022-04-23 13:45:13,472 - TJU_VIPLab - INFO - Epoch 3, [26/500] lr: 0.001000 time: 0.115 loss_l1: 0.330856 loss_ssim: 0.807546 loss_hsv: 0.105194 loss_perceptual: 1.673389 loss: 2.080290
+2022-04-23 13:45:14,103 - TJU_VIPLab - INFO - Epoch 3, [27/500] lr: 0.001000 time: 0.000 loss_l1: 0.388043 loss_ssim: 0.932711 loss_hsv: 0.111418 loss_perceptual: 1.365977 loss: 2.115160
+2022-04-23 13:45:14,732 - TJU_VIPLab - INFO - Epoch 3, [28/500] lr: 0.001000 time: 0.000 loss_l1: 0.443345 loss_ssim: 0.958527 loss_hsv: 0.173120 loss_perceptual: 1.612367 loss: 2.381176
+2022-04-23 13:45:15,356 - TJU_VIPLab - INFO - Epoch 3, [29/500] lr: 0.001000 time: 0.000 loss_l1: 0.471509 loss_ssim: 0.959302 loss_hsv: 0.150379 loss_perceptual: 1.326993 loss: 2.244686
+2022-04-23 13:45:15,987 - TJU_VIPLab - INFO - Epoch 3, [30/500] lr: 0.001000 time: 0.000 loss_l1: 0.399440 loss_ssim: 0.851967 loss_hsv: 0.099270 loss_perceptual: 0.933543 loss: 1.817448
+2022-04-23 13:45:16,457 - TJU_VIPLab - INFO - 
+Start Epoch 4 -----------
+2022-04-23 13:45:18,952 - TJU_VIPLab - INFO - Epoch 4, [31/500] lr: 0.001000 time: 2.190 loss_l1: 0.454874 loss_ssim: 0.834181 loss_hsv: 0.078453 loss_perceptual: 1.024126 loss: 1.879571
+2022-04-23 13:45:19,577 - TJU_VIPLab - INFO - Epoch 4, [32/500] lr: 0.001000 time: 0.010 loss_l1: 0.445209 loss_ssim: 0.883501 loss_hsv: 0.113111 loss_perceptual: 1.039591 loss: 1.961618
+2022-04-23 13:45:20,192 - TJU_VIPLab - INFO - Epoch 4, [33/500] lr: 0.001000 time: 0.000 loss_l1: 0.382031 loss_ssim: 0.957091 loss_hsv: 0.074192 loss_perceptual: 1.382744 loss: 2.104686
+2022-04-23 13:45:20,827 - TJU_VIPLab - INFO - Epoch 4, [34/500] lr: 0.001000 time: 0.010 loss_l1: 0.361646 loss_ssim: 0.869963 loss_hsv: 0.138161 loss_perceptual: 1.314324 loss: 2.026932
+2022-04-23 13:45:21,447 - TJU_VIPLab - INFO - Epoch 4, [35/500] lr: 0.001000 time: 0.000 loss_l1: 0.387841 loss_ssim: 0.866074 loss_hsv: 0.136566 loss_perceptual: 1.883096 loss: 2.332030
+2022-04-23 13:45:22,192 - TJU_VIPLab - INFO - Epoch 4, [36/500] lr: 0.001000 time: 0.122 loss_l1: 0.319614 loss_ssim: 0.782504 loss_hsv: 0.093651 loss_perceptual: 1.473019 loss: 1.932278
+2022-04-23 13:45:22,821 - TJU_VIPLab - INFO - Epoch 4, [37/500] lr: 0.001000 time: 0.000 loss_l1: 0.435821 loss_ssim: 0.897456 loss_hsv: 0.093843 loss_perceptual: 1.247832 loss: 2.051036
+2022-04-23 13:45:23,452 - TJU_VIPLab - INFO - Epoch 4, [38/500] lr: 0.001000 time: 0.000 loss_l1: 0.436281 loss_ssim: 0.865499 loss_hsv: 0.176207 loss_perceptual: 1.429456 loss: 2.192715
+2022-04-23 13:45:24,082 - TJU_VIPLab - INFO - Epoch 4, [39/500] lr: 0.001000 time: 0.000 loss_l1: 0.469205 loss_ssim: 0.972442 loss_hsv: 0.139055 loss_perceptual: 1.182306 loss: 2.171855
+2022-04-23 13:45:24,713 - TJU_VIPLab - INFO - Epoch 4, [40/500] lr: 0.001000 time: 0.000 loss_l1: 0.402807 loss_ssim: 0.838632 loss_hsv: 0.094659 loss_perceptual: 0.886451 loss: 1.779323
+2022-04-23 13:45:25,184 - TJU_VIPLab - INFO - 
+Start Epoch 5 -----------
+2022-04-23 13:45:27,642 - TJU_VIPLab - INFO - Epoch 5, [41/500] lr: 0.001000 time: 2.190 loss_l1: 0.504809 loss_ssim: 0.860707 loss_hsv: 0.083158 loss_perceptual: 0.999614 loss: 1.948481
+2022-04-23 13:45:28,292 - TJU_VIPLab - INFO - Epoch 5, [42/500] lr: 0.001000 time: 0.000 loss_l1: 0.448663 loss_ssim: 0.884922 loss_hsv: 0.123066 loss_perceptual: 1.163628 loss: 2.038465
+2022-04-23 13:45:28,912 - TJU_VIPLab - INFO - Epoch 5, [43/500] lr: 0.001000 time: 0.000 loss_l1: 0.378087 loss_ssim: 0.906736 loss_hsv: 0.082031 loss_perceptual: 1.337342 loss: 2.035525
+2022-04-23 13:45:29,542 - TJU_VIPLab - INFO - Epoch 5, [44/500] lr: 0.001000 time: 0.000 loss_l1: 0.368009 loss_ssim: 0.853755 loss_hsv: 0.138823 loss_perceptual: 1.241713 loss: 1.981445
+2022-04-23 13:45:30,172 - TJU_VIPLab - INFO - Epoch 5, [45/500] lr: 0.001000 time: 0.000 loss_l1: 0.382973 loss_ssim: 0.832516 loss_hsv: 0.135393 loss_perceptual: 1.697453 loss: 2.199609
+2022-04-23 13:45:30,912 - TJU_VIPLab - INFO - Epoch 5, [46/500] lr: 0.001000 time: 0.108 loss_l1: 0.332656 loss_ssim: 0.806945 loss_hsv: 0.087972 loss_perceptual: 1.416682 loss: 1.935914
+2022-04-23 13:45:31,536 - TJU_VIPLab - INFO - Epoch 5, [47/500] lr: 0.001000 time: 0.000 loss_l1: 0.431929 loss_ssim: 0.938005 loss_hsv: 0.105620 loss_perceptual: 1.088996 loss: 2.020052
+2022-04-23 13:45:32,167 - TJU_VIPLab - INFO - Epoch 5, [48/500] lr: 0.001000 time: 0.000 loss_l1: 0.456759 loss_ssim: 0.941435 loss_hsv: 0.178741 loss_perceptual: 1.364096 loss: 2.258984
+2022-04-23 13:45:32,794 - TJU_VIPLab - INFO - Epoch 5, [49/500] lr: 0.001000 time: 0.000 loss_l1: 0.453944 loss_ssim: 0.962652 loss_hsv: 0.135518 loss_perceptual: 1.010534 loss: 2.057382
+2022-04-23 13:45:33,422 - TJU_VIPLab - INFO - Epoch 5, [50/500] lr: 0.001000 time: 0.000 loss_l1: 0.393853 loss_ssim: 0.826998 loss_hsv: 0.093805 loss_perceptual: 0.810577 loss: 1.719944
+2022-04-23 13:45:33,883 - TJU_VIPLab - INFO - 
+Start Epoch 6 -----------
+2022-04-23 13:45:36,372 - TJU_VIPLab - INFO - Epoch 6, [51/500] lr: 0.001000 time: 2.190 loss_l1: 0.502830 loss_ssim: 0.853084 loss_hsv: 0.088692 loss_perceptual: 0.889391 loss: 1.889301
+2022-04-23 13:45:37,008 - TJU_VIPLab - INFO - Epoch 6, [52/500] lr: 0.001000 time: 0.000 loss_l1: 0.435506 loss_ssim: 0.845849 loss_hsv: 0.118383 loss_perceptual: 1.027991 loss: 1.913733
+2022-04-23 13:45:37,632 - TJU_VIPLab - INFO - Epoch 6, [53/500] lr: 0.001000 time: 0.000 loss_l1: 0.373719 loss_ssim: 0.906257 loss_hsv: 0.076958 loss_perceptual: 1.297745 loss: 2.005807
+2022-04-23 13:45:38,282 - TJU_VIPLab - INFO - Epoch 6, [54/500] lr: 0.001000 time: 0.000 loss_l1: 0.369978 loss_ssim: 0.864312 loss_hsv: 0.138042 loss_perceptual: 1.193146 loss: 1.968905
+2022-04-23 13:45:38,912 - TJU_VIPLab - INFO - Epoch 6, [55/500] lr: 0.001000 time: 0.000 loss_l1: 0.418024 loss_ssim: 0.859168 loss_hsv: 0.150276 loss_perceptual: 1.504671 loss: 2.179803
+2022-04-23 13:45:39,652 - TJU_VIPLab - INFO - Epoch 6, [56/500] lr: 0.001000 time: 0.120 loss_l1: 0.333037 loss_ssim: 0.788551 loss_hsv: 0.103656 loss_perceptual: 1.264783 loss: 1.857636
+2022-04-23 13:45:40,292 - TJU_VIPLab - INFO - Epoch 6, [57/500] lr: 0.001000 time: 0.000 loss_l1: 0.422598 loss_ssim: 0.875808 loss_hsv: 0.094659 loss_perceptual: 1.134272 loss: 1.960201
+2022-04-23 13:45:40,927 - TJU_VIPLab - INFO - Epoch 6, [58/500] lr: 0.001000 time: 0.000 loss_l1: 0.447344 loss_ssim: 0.906238 loss_hsv: 0.178632 loss_perceptual: 1.274112 loss: 2.169270
+2022-04-23 13:45:41,552 - TJU_VIPLab - INFO - Epoch 6, [59/500] lr: 0.001000 time: 0.000 loss_l1: 0.447541 loss_ssim: 0.953807 loss_hsv: 0.135549 loss_perceptual: 0.961262 loss: 2.017528
+2022-04-23 13:45:42,171 - TJU_VIPLab - INFO - Epoch 6, [60/500] lr: 0.001000 time: 0.000 loss_l1: 0.383519 loss_ssim: 0.820559 loss_hsv: 0.117425 loss_perceptual: 0.803647 loss: 1.723326
+2022-04-23 13:45:42,644 - TJU_VIPLab - INFO - 
+Start Epoch 7 -----------
+2022-04-23 13:45:45,162 - TJU_VIPLab - INFO - Epoch 7, [61/500] lr: 0.001000 time: 2.195 loss_l1: 0.528782 loss_ssim: 0.916701 loss_hsv: 0.095616 loss_perceptual: 0.893128 loss: 1.987663
+2022-04-23 13:45:45,802 - TJU_VIPLab - INFO - Epoch 7, [62/500] lr: 0.001000 time: 0.000 loss_l1: 0.437686 loss_ssim: 0.847907 loss_hsv: 0.115060 loss_perceptual: 0.960731 loss: 1.881018
+2022-04-23 13:45:46,432 - TJU_VIPLab - INFO - Epoch 7, [63/500] lr: 0.001000 time: 0.000 loss_l1: 0.350260 loss_ssim: 0.873734 loss_hsv: 0.064583 loss_perceptual: 1.203723 loss: 1.890438
+2022-04-23 13:45:47,056 - TJU_VIPLab - INFO - Epoch 7, [64/500] lr: 0.001000 time: 0.000 loss_l1: 0.361802 loss_ssim: 0.827722 loss_hsv: 0.134407 loss_perceptual: 1.158039 loss: 1.902950
+2022-04-23 13:45:47,691 - TJU_VIPLab - INFO - Epoch 7, [65/500] lr: 0.001000 time: 0.000 loss_l1: 0.390712 loss_ssim: 0.813263 loss_hsv: 0.142261 loss_perceptual: 1.417309 loss: 2.054891
+2022-04-23 13:45:48,454 - TJU_VIPLab - INFO - Epoch 7, [66/500] lr: 0.001000 time: 0.111 loss_l1: 0.327055 loss_ssim: 0.771217 loss_hsv: 0.100801 loss_perceptual: 1.246703 loss: 1.822425
+2022-04-23 13:45:49,084 - TJU_VIPLab - INFO - Epoch 7, [67/500] lr: 0.001000 time: 0.000 loss_l1: 0.428770 loss_ssim: 0.889185 loss_hsv: 0.108797 loss_perceptual: 1.081776 loss: 1.967641
+2022-04-23 13:45:49,715 - TJU_VIPLab - INFO - Epoch 7, [68/500] lr: 0.001000 time: 0.001 loss_l1: 0.420035 loss_ssim: 0.844866 loss_hsv: 0.172981 loss_perceptual: 1.294528 loss: 2.085146
+2022-04-23 13:45:50,349 - TJU_VIPLab - INFO - Epoch 7, [69/500] lr: 0.001000 time: 0.001 loss_l1: 0.467270 loss_ssim: 0.923896 loss_hsv: 0.137761 loss_perceptual: 0.997388 loss: 2.027621
+2022-04-23 13:45:50,982 - TJU_VIPLab - INFO - Epoch 7, [70/500] lr: 0.001000 time: 0.000 loss_l1: 0.364168 loss_ssim: 0.773070 loss_hsv: 0.124641 loss_perceptual: 0.811554 loss: 1.667657
+2022-04-23 13:45:51,467 - TJU_VIPLab - INFO - 
+Start Epoch 8 -----------
+2022-04-23 13:45:54,102 - TJU_VIPLab - INFO - Epoch 8, [71/500] lr: 0.001000 time: 2.249 loss_l1: 0.465600 loss_ssim: 0.803721 loss_hsv: 0.105872 loss_perceptual: 0.899001 loss: 1.824694
+2022-04-23 13:45:54,743 - TJU_VIPLab - INFO - Epoch 8, [72/500] lr: 0.001000 time: 0.000 loss_l1: 0.428878 loss_ssim: 0.850447 loss_hsv: 0.119310 loss_perceptual: 0.944677 loss: 1.870973
+2022-04-23 13:45:55,380 - TJU_VIPLab - INFO - Epoch 8, [73/500] lr: 0.001000 time: 0.001 loss_l1: 0.363395 loss_ssim: 0.858249 loss_hsv: 0.072727 loss_perceptual: 1.266558 loss: 1.927650
+2022-04-23 13:45:56,011 - TJU_VIPLab - INFO - Epoch 8, [74/500] lr: 0.001000 time: 0.001 loss_l1: 0.361013 loss_ssim: 0.845749 loss_hsv: 0.140691 loss_perceptual: 1.080858 loss: 1.887882
+2022-04-23 13:45:56,633 - TJU_VIPLab - INFO - Epoch 8, [75/500] lr: 0.001000 time: 0.000 loss_l1: 0.375811 loss_ssim: 0.808306 loss_hsv: 0.135980 loss_perceptual: 1.551069 loss: 2.095632
+2022-04-23 13:45:57,422 - TJU_VIPLab - INFO - Epoch 8, [76/500] lr: 0.001000 time: 0.129 loss_l1: 0.325943 loss_ssim: 0.771086 loss_hsv: 0.106192 loss_perceptual: 1.265558 loss: 1.836000
+2022-04-23 13:45:58,052 - TJU_VIPLab - INFO - Epoch 8, [77/500] lr: 0.001000 time: 0.001 loss_l1: 0.420339 loss_ssim: 0.916764 loss_hsv: 0.112402 loss_perceptual: 0.956343 loss: 1.927676
+2022-04-23 13:45:58,694 - TJU_VIPLab - INFO - Epoch 8, [78/500] lr: 0.001000 time: 0.001 loss_l1: 0.439876 loss_ssim: 0.918239 loss_hsv: 0.167151 loss_perceptual: 1.211296 loss: 2.130914
+2022-04-23 13:45:59,317 - TJU_VIPLab - INFO - Epoch 8, [79/500] lr: 0.001000 time: 0.000 loss_l1: 0.452777 loss_ssim: 0.912303 loss_hsv: 0.142198 loss_perceptual: 0.963758 loss: 1.989157
+2022-04-23 13:45:59,952 - TJU_VIPLab - INFO - Epoch 8, [80/500] lr: 0.001000 time: 0.010 loss_l1: 0.403334 loss_ssim: 0.814802 loss_hsv: 0.105465 loss_perceptual: 0.714033 loss: 1.680617
+2022-04-23 13:46:00,439 - TJU_VIPLab - INFO - 
+Start Epoch 9 -----------
+2022-04-23 13:46:03,012 - TJU_VIPLab - INFO - Epoch 9, [81/500] lr: 0.001000 time: 2.210 loss_l1: 0.471032 loss_ssim: 0.795683 loss_hsv: 0.095483 loss_perceptual: 0.920442 loss: 1.822418
+2022-04-23 13:46:03,637 - TJU_VIPLab - INFO - Epoch 9, [82/500] lr: 0.001000 time: 0.001 loss_l1: 0.431168 loss_ssim: 0.843676 loss_hsv: 0.117876 loss_perceptual: 0.936407 loss: 1.860923
+2022-04-23 13:46:04,297 - TJU_VIPLab - INFO - Epoch 9, [83/500] lr: 0.001000 time: 0.000 loss_l1: 0.362326 loss_ssim: 0.885884 loss_hsv: 0.072384 loss_perceptual: 1.095276 loss: 1.868232
+2022-04-23 13:46:04,929 - TJU_VIPLab - INFO - Epoch 9, [84/500] lr: 0.001000 time: 0.000 loss_l1: 0.346179 loss_ssim: 0.820465 loss_hsv: 0.131010 loss_perceptual: 1.167511 loss: 1.881409
+2022-04-23 13:46:05,562 - TJU_VIPLab - INFO - Epoch 9, [85/500] lr: 0.001000 time: 0.000 loss_l1: 0.374273 loss_ssim: 0.819383 loss_hsv: 0.142024 loss_perceptual: 1.358966 loss: 2.015163
+2022-04-23 13:46:06,336 - TJU_VIPLab - INFO - Epoch 9, [86/500] lr: 0.001000 time: 0.140 loss_l1: 0.306548 loss_ssim: 0.750338 loss_hsv: 0.104404 loss_perceptual: 1.205588 loss: 1.764084
+2022-04-23 13:46:06,974 - TJU_VIPLab - INFO - Epoch 9, [87/500] lr: 0.001000 time: 0.000 loss_l1: 0.419481 loss_ssim: 0.889398 loss_hsv: 0.113788 loss_perceptual: 1.053441 loss: 1.949388
+2022-04-23 13:46:07,602 - TJU_VIPLab - INFO - Epoch 9, [88/500] lr: 0.001000 time: 0.000 loss_l1: 0.431525 loss_ssim: 0.922722 loss_hsv: 0.167987 loss_perceptual: 1.149824 loss: 2.097147
+2022-04-23 13:46:08,242 - TJU_VIPLab - INFO - Epoch 9, [89/500] lr: 0.001000 time: 0.000 loss_l1: 0.447321 loss_ssim: 0.926304 loss_hsv: 0.135462 loss_perceptual: 0.918491 loss: 1.968333
+2022-04-23 13:46:08,875 - TJU_VIPLab - INFO - Epoch 9, [90/500] lr: 0.001000 time: 0.000 loss_l1: 0.399077 loss_ssim: 0.823996 loss_hsv: 0.111515 loss_perceptual: 0.720548 loss: 1.694863
+2022-04-23 13:46:09,356 - TJU_VIPLab - INFO - 
+Start Epoch 10 -----------
+2022-04-23 13:46:12,013 - TJU_VIPLab - INFO - Epoch 10, [91/500] lr: 0.001000 time: 2.326 loss_l1: 0.500815 loss_ssim: 0.863932 loss_hsv: 0.102694 loss_perceptual: 0.853022 loss: 1.893953
+2022-04-23 13:46:12,645 - TJU_VIPLab - INFO - Epoch 10, [92/500] lr: 0.001000 time: 0.001 loss_l1: 0.426098 loss_ssim: 0.826600 loss_hsv: 0.117196 loss_perceptual: 0.897242 loss: 1.818515
+2022-04-23 13:46:13,313 - TJU_VIPLab - INFO - Epoch 10, [93/500] lr: 0.001000 time: 0.000 loss_l1: 0.348021 loss_ssim: 0.830222 loss_hsv: 0.064247 loss_perceptual: 1.172067 loss: 1.828524
+2022-04-23 13:46:13,946 - TJU_VIPLab - INFO - Epoch 10, [94/500] lr: 0.001000 time: 0.001 loss_l1: 0.358213 loss_ssim: 0.832109 loss_hsv: 0.137678 loss_perceptual: 1.103313 loss: 1.879657
+2022-04-23 13:46:14,587 - TJU_VIPLab - INFO - Epoch 10, [95/500] lr: 0.001000 time: 0.000 loss_l1: 0.367252 loss_ssim: 0.800412 loss_hsv: 0.132045 loss_perceptual: 1.521411 loss: 2.060414
+2022-04-23 13:46:15,335 - TJU_VIPLab - INFO - Epoch 10, [96/500] lr: 0.001000 time: 0.113 loss_l1: 0.307320 loss_ssim: 0.759266 loss_hsv: 0.086553 loss_perceptual: 1.253938 loss: 1.780107
+2022-04-23 13:46:15,971 - TJU_VIPLab - INFO - Epoch 10, [97/500] lr: 0.001000 time: 0.000 loss_l1: 0.435756 loss_ssim: 0.858102 loss_hsv: 0.084798 loss_perceptual: 0.920424 loss: 1.838869
+2022-04-23 13:46:16,607 - TJU_VIPLab - INFO - Epoch 10, [98/500] lr: 0.001000 time: 0.001 loss_l1: 0.430771 loss_ssim: 0.890556 loss_hsv: 0.173942 loss_perceptual: 1.215389 loss: 2.102964
+2022-04-23 13:46:17,242 - TJU_VIPLab - INFO - Epoch 10, [99/500] lr: 0.001000 time: 0.000 loss_l1: 0.435815 loss_ssim: 0.886714 loss_hsv: 0.142396 loss_perceptual: 0.864302 loss: 1.897076
+2022-04-23 13:46:17,872 - TJU_VIPLab - INFO - Epoch 10, [100/500] lr: 0.001000 time: 0.000 loss_l1: 0.381267 loss_ssim: 0.804331 loss_hsv: 0.119152 loss_perceptual: 0.716318 loss: 1.662909
+2022-04-23 13:46:18,368 - TJU_VIPLab - INFO - 
+Start Epoch 11 -----------
+2022-04-23 13:46:20,962 - TJU_VIPLab - INFO - Epoch 11, [101/500] lr: 0.001000 time: 2.316 loss_l1: 0.500898 loss_ssim: 0.841817 loss_hsv: 0.095011 loss_perceptual: 0.834576 loss: 1.855014
+2022-04-23 13:46:21,597 - TJU_VIPLab - INFO - Epoch 11, [102/500] lr: 0.001000 time: 0.000 loss_l1: 0.426977 loss_ssim: 0.831370 loss_hsv: 0.116226 loss_perceptual: 0.790049 loss: 1.769598
+2022-04-23 13:46:22,235 - TJU_VIPLab - INFO - Epoch 11, [103/500] lr: 0.001000 time: 0.000 loss_l1: 0.354395 loss_ssim: 0.862233 loss_hsv: 0.063297 loss_perceptual: 1.048535 loss: 1.804193
+2022-04-23 13:46:22,872 - TJU_VIPLab - INFO - Epoch 11, [104/500] lr: 0.001000 time: 0.001 loss_l1: 0.344113 loss_ssim: 0.807122 loss_hsv: 0.134154 loss_perceptual: 1.054481 loss: 1.812629
+2022-04-23 13:46:23,507 - TJU_VIPLab - INFO - Epoch 11, [105/500] lr: 0.001000 time: 0.000 loss_l1: 0.431457 loss_ssim: 0.837301 loss_hsv: 0.164760 loss_perceptual: 1.289367 loss: 2.078201
+2022-04-23 13:46:24,251 - TJU_VIPLab - INFO - Epoch 11, [106/500] lr: 0.001000 time: 0.112 loss_l1: 0.308304 loss_ssim: 0.743147 loss_hsv: 0.097439 loss_perceptual: 1.188440 loss: 1.743110
+2022-04-23 13:46:24,908 - TJU_VIPLab - INFO - Epoch 11, [107/500] lr: 0.001000 time: 0.000 loss_l1: 0.419598 loss_ssim: 0.895527 loss_hsv: 0.113727 loss_perceptual: 0.983856 loss: 1.920780
+2022-04-23 13:46:25,531 - TJU_VIPLab - INFO - Epoch 11, [108/500] lr: 0.001000 time: 0.001 loss_l1: 0.421168 loss_ssim: 0.842298 loss_hsv: 0.172523 loss_perceptual: 1.170608 loss: 2.021293
+2022-04-23 13:46:26,222 - TJU_VIPLab - INFO - Epoch 11, [109/500] lr: 0.001000 time: 0.000 loss_l1: 0.455553 loss_ssim: 0.934722 loss_hsv: 0.139582 loss_perceptual: 0.832662 loss: 1.946188
+2022-04-23 13:46:26,874 - TJU_VIPLab - INFO - Epoch 11, [110/500] lr: 0.001000 time: 0.002 loss_l1: 0.368430 loss_ssim: 0.771241 loss_hsv: 0.116295 loss_perceptual: 0.789282 loss: 1.650607
+2022-04-23 13:46:28,142 - TJU_VIPLab - INFO - 
+Start Epoch 12 -----------
+2022-04-23 13:46:32,951 - TJU_VIPLab - INFO - Epoch 12, [111/500] lr: 0.001000 time: 5.155 loss_l1: 0.451769 loss_ssim: 0.806413 loss_hsv: 0.091051 loss_perceptual: 0.830190 loss: 1.764328
+2022-04-23 13:46:33,592 - TJU_VIPLab - INFO - Epoch 12, [112/500] lr: 0.001000 time: 0.000 loss_l1: 0.421075 loss_ssim: 0.821135 loss_hsv: 0.116456 loss_perceptual: 0.866751 loss: 1.792041
+2022-04-23 13:46:34,222 - TJU_VIPLab - INFO - Epoch 12, [113/500] lr: 0.001000 time: 0.000 loss_l1: 0.349746 loss_ssim: 0.847470 loss_hsv: 0.063483 loss_perceptual: 1.070907 loss: 1.796152
+2022-04-23 13:46:34,852 - TJU_VIPLab - INFO - Epoch 12, [114/500] lr: 0.001000 time: 0.000 loss_l1: 0.342735 loss_ssim: 0.799684 loss_hsv: 0.132069 loss_perceptual: 1.084391 loss: 1.816684
+2022-04-23 13:46:35,482 - TJU_VIPLab - INFO - Epoch 12, [115/500] lr: 0.001000 time: 0.000 loss_l1: 0.360050 loss_ssim: 0.794786 loss_hsv: 0.130291 loss_perceptual: 1.436874 loss: 2.003564
+2022-04-23 13:46:36,232 - TJU_VIPLab - INFO - Epoch 12, [116/500] lr: 0.001000 time: 0.125 loss_l1: 0.306673 loss_ssim: 0.734374 loss_hsv: 0.106482 loss_perceptual: 1.105329 loss: 1.700193
+2022-04-23 13:46:36,851 - TJU_VIPLab - INFO - Epoch 12, [117/500] lr: 0.001000 time: 0.000 loss_l1: 0.413362 loss_ssim: 0.890960 loss_hsv: 0.112356 loss_perceptual: 0.950185 loss: 1.891772
+2022-04-23 13:46:37,492 - TJU_VIPLab - INFO - Epoch 12, [118/500] lr: 0.001000 time: 0.000 loss_l1: 0.434400 loss_ssim: 0.870294 loss_hsv: 0.174868 loss_perceptual: 1.083874 loss: 2.021498
+2022-04-23 13:46:38,122 - TJU_VIPLab - INFO - Epoch 12, [119/500] lr: 0.001000 time: 0.000 loss_l1: 0.468079 loss_ssim: 0.899662 loss_hsv: 0.149006 loss_perceptual: 0.868628 loss: 1.951062
+2022-04-23 13:46:38,777 - TJU_VIPLab - INFO - Epoch 12, [120/500] lr: 0.001000 time: 0.000 loss_l1: 0.381135 loss_ssim: 0.796081 loss_hsv: 0.113835 loss_perceptual: 0.710226 loss: 1.646164
+2022-04-23 13:46:39,267 - TJU_VIPLab - INFO - 
+Start Epoch 13 -----------
+2022-04-23 13:46:41,857 - TJU_VIPLab - INFO - Epoch 13, [121/500] lr: 0.001000 time: 2.315 loss_l1: 0.504514 loss_ssim: 0.862842 loss_hsv: 0.107411 loss_perceptual: 0.812564 loss: 1.881048
+2022-04-23 13:46:42,486 - TJU_VIPLab - INFO - Epoch 13, [122/500] lr: 0.001000 time: 0.000 loss_l1: 0.423508 loss_ssim: 0.834980 loss_hsv: 0.118917 loss_perceptual: 0.806065 loss: 1.780437
+2022-04-23 13:46:43,121 - TJU_VIPLab - INFO - Epoch 13, [123/500] lr: 0.001000 time: 0.000 loss_l1: 0.359391 loss_ssim: 0.848015 loss_hsv: 0.073272 loss_perceptual: 0.981239 loss: 1.771297
+2022-04-23 13:46:43,777 - TJU_VIPLab - INFO - Epoch 13, [124/500] lr: 0.001000 time: 0.004 loss_l1: 0.360541 loss_ssim: 0.816205 loss_hsv: 0.134453 loss_perceptual: 1.076239 loss: 1.849319
+2022-04-23 13:46:44,412 - TJU_VIPLab - INFO - Epoch 13, [125/500] lr: 0.001000 time: 0.000 loss_l1: 0.424446 loss_ssim: 0.824224 loss_hsv: 0.159433 loss_perceptual: 1.251744 loss: 2.033975
+2022-04-23 13:46:45,152 - TJU_VIPLab - INFO - Epoch 13, [126/500] lr: 0.001000 time: 0.111 loss_l1: 0.299832 loss_ssim: 0.734976 loss_hsv: 0.091284 loss_perceptual: 1.107760 loss: 1.679972
+2022-04-23 13:46:45,797 - TJU_VIPLab - INFO - Epoch 13, [127/500] lr: 0.001000 time: 0.000 loss_l1: 0.399546 loss_ssim: 0.841909 loss_hsv: 0.108386 loss_perceptual: 0.989026 loss: 1.844354
+2022-04-23 13:46:46,432 - TJU_VIPLab - INFO - Epoch 13, [128/500] lr: 0.001000 time: 0.000 loss_l1: 0.432206 loss_ssim: 0.902214 loss_hsv: 0.174193 loss_perceptual: 1.064784 loss: 2.041004
+2022-04-23 13:46:47,077 - TJU_VIPLab - INFO - Epoch 13, [129/500] lr: 0.001000 time: 0.000 loss_l1: 0.468103 loss_ssim: 0.893961 loss_hsv: 0.152306 loss_perceptual: 0.866722 loss: 1.947732
+2022-04-23 13:46:47,715 - TJU_VIPLab - INFO - Epoch 13, [130/500] lr: 0.001000 time: 0.000 loss_l1: 0.379309 loss_ssim: 0.779981 loss_hsv: 0.118393 loss_perceptual: 0.699619 loss: 1.627491
+2022-04-23 13:46:48,191 - TJU_VIPLab - INFO - 
+Start Epoch 14 -----------
+2022-04-23 13:46:50,731 - TJU_VIPLab - INFO - Epoch 14, [131/500] lr: 0.001000 time: 2.265 loss_l1: 0.526489 loss_ssim: 0.857951 loss_hsv: 0.093385 loss_perceptual: 0.821593 loss: 1.888622
+2022-04-23 13:46:51,362 - TJU_VIPLab - INFO - Epoch 14, [132/500] lr: 0.001000 time: 0.000 loss_l1: 0.433641 loss_ssim: 0.827266 loss_hsv: 0.121919 loss_perceptual: 0.864765 loss: 1.815208
+2022-04-23 13:46:52,002 - TJU_VIPLab - INFO - Epoch 14, [133/500] lr: 0.001000 time: 0.000 loss_l1: 0.360029 loss_ssim: 0.844637 loss_hsv: 0.073318 loss_perceptual: 1.011785 loss: 1.783875
+2022-04-23 13:46:52,642 - TJU_VIPLab - INFO - Epoch 14, [134/500] lr: 0.001000 time: 0.000 loss_l1: 0.351513 loss_ssim: 0.789127 loss_hsv: 0.137055 loss_perceptual: 1.068332 loss: 1.811861
+2022-04-23 13:46:53,302 - TJU_VIPLab - INFO - Epoch 14, [135/500] lr: 0.001000 time: 0.000 loss_l1: 0.391454 loss_ssim: 0.794679 loss_hsv: 0.140413 loss_perceptual: 1.292480 loss: 1.972787
+2022-04-23 13:46:54,047 - TJU_VIPLab - INFO - Epoch 14, [136/500] lr: 0.001000 time: 0.110 loss_l1: 0.307983 loss_ssim: 0.752386 loss_hsv: 0.090875 loss_perceptual: 1.163616 loss: 1.733052
+2022-04-23 13:46:54,682 - TJU_VIPLab - INFO - Epoch 14, [137/500] lr: 0.001000 time: 0.000 loss_l1: 0.429373 loss_ssim: 0.877622 loss_hsv: 0.111922 loss_perceptual: 0.933817 loss: 1.885825
+2022-04-23 13:46:55,312 - TJU_VIPLab - INFO - Epoch 14, [138/500] lr: 0.001000 time: 0.000 loss_l1: 0.426863 loss_ssim: 0.868391 loss_hsv: 0.172704 loss_perceptual: 1.094687 loss: 2.015302
+2022-04-23 13:46:55,945 - TJU_VIPLab - INFO - Epoch 14, [139/500] lr: 0.001000 time: 0.000 loss_l1: 0.450720 loss_ssim: 0.887169 loss_hsv: 0.144513 loss_perceptual: 0.829363 loss: 1.897083
+2022-04-23 13:46:56,587 - TJU_VIPLab - INFO - Epoch 14, [140/500] lr: 0.001000 time: 0.000 loss_l1: 0.384172 loss_ssim: 0.784537 loss_hsv: 0.100744 loss_perceptual: 0.614156 loss: 1.576530
+2022-04-23 13:46:57,057 - TJU_VIPLab - INFO - 
+Start Epoch 15 -----------
+2022-04-23 13:46:59,732 - TJU_VIPLab - INFO - Epoch 15, [141/500] lr: 0.001000 time: 2.330 loss_l1: 0.509254 loss_ssim: 0.849003 loss_hsv: 0.099290 loss_perceptual: 0.824776 loss: 1.869935
+2022-04-23 13:47:00,363 - TJU_VIPLab - INFO - Epoch 15, [142/500] lr: 0.001000 time: 0.001 loss_l1: 0.467512 loss_ssim: 0.857188 loss_hsv: 0.128179 loss_perceptual: 0.833656 loss: 1.869707
+2022-04-23 13:47:01,001 - TJU_VIPLab - INFO - Epoch 15, [143/500] lr: 0.001000 time: 0.000 loss_l1: 0.355364 loss_ssim: 0.819736 loss_hsv: 0.064174 loss_perceptual: 1.075000 loss: 1.776774
+2022-04-23 13:47:01,632 - TJU_VIPLab - INFO - Epoch 15, [144/500] lr: 0.001000 time: 0.001 loss_l1: 0.341519 loss_ssim: 0.776004 loss_hsv: 0.125653 loss_perceptual: 1.014221 loss: 1.750286
+2022-04-23 13:47:02,294 - TJU_VIPLab - INFO - Epoch 15, [145/500] lr: 0.001000 time: 0.000 loss_l1: 0.350726 loss_ssim: 0.758896 loss_hsv: 0.128147 loss_perceptual: 1.342600 loss: 1.909069
+2022-04-23 13:47:03,054 - TJU_VIPLab - INFO - Epoch 15, [146/500] lr: 0.001000 time: 0.121 loss_l1: 0.311382 loss_ssim: 0.752371 loss_hsv: 0.093703 loss_perceptual: 1.173074 loss: 1.743993
+2022-04-23 13:47:03,693 - TJU_VIPLab - INFO - Epoch 15, [147/500] lr: 0.001000 time: 0.001 loss_l1: 0.413776 loss_ssim: 0.906649 loss_hsv: 0.109231 loss_perceptual: 0.897726 loss: 1.878518
+2022-04-23 13:47:04,334 - TJU_VIPLab - INFO - Epoch 15, [148/500] lr: 0.001000 time: 0.000 loss_l1: 0.422725 loss_ssim: 0.870586 loss_hsv: 0.172229 loss_perceptual: 1.092097 loss: 2.011588
+2022-04-23 13:47:04,967 - TJU_VIPLab - INFO - Epoch 15, [149/500] lr: 0.001000 time: 0.000 loss_l1: 0.469857 loss_ssim: 0.890320 loss_hsv: 0.144829 loss_perceptual: 0.834693 loss: 1.922353
+2022-04-23 13:47:05,622 - TJU_VIPLab - INFO - Epoch 15, [150/500] lr: 0.001000 time: 0.000 loss_l1: 0.384380 loss_ssim: 0.787467 loss_hsv: 0.101745 loss_perceptual: 0.638541 loss: 1.592862
+2022-04-23 13:47:06,107 - TJU_VIPLab - INFO - 
+Start Epoch 16 -----------
+2022-04-23 13:47:08,712 - TJU_VIPLab - INFO - Epoch 16, [151/500] lr: 0.001000 time: 2.210 loss_l1: 0.451945 loss_ssim: 0.779389 loss_hsv: 0.091782 loss_perceptual: 0.783137 loss: 1.714684
+2022-04-23 13:47:09,347 - TJU_VIPLab - INFO - Epoch 16, [152/500] lr: 0.001000 time: 0.000 loss_l1: 0.431657 loss_ssim: 0.840360 loss_hsv: 0.121015 loss_perceptual: 0.786690 loss: 1.786376
+2022-04-23 13:47:09,992 - TJU_VIPLab - INFO - Epoch 16, [153/500] lr: 0.001000 time: 0.000 loss_l1: 0.357982 loss_ssim: 0.833834 loss_hsv: 0.068500 loss_perceptual: 1.049449 loss: 1.785040
+2022-04-23 13:47:10,622 - TJU_VIPLab - INFO - Epoch 16, [154/500] lr: 0.001000 time: 0.000 loss_l1: 0.355118 loss_ssim: 0.825804 loss_hsv: 0.138225 loss_perceptual: 0.984728 loss: 1.811511
+2022-04-23 13:47:11,277 - TJU_VIPLab - INFO - Epoch 16, [155/500] lr: 0.001000 time: 0.000 loss_l1: 0.353473 loss_ssim: 0.789309 loss_hsv: 0.130965 loss_perceptual: 1.166229 loss: 1.856862
+2022-04-23 13:47:12,017 - TJU_VIPLab - INFO - Epoch 16, [156/500] lr: 0.001000 time: 0.105 loss_l1: 0.315459 loss_ssim: 0.779639 loss_hsv: 0.109276 loss_perceptual: 1.092796 loss: 1.750773
+2022-04-23 13:47:12,657 - TJU_VIPLab - INFO - Epoch 16, [157/500] lr: 0.001000 time: 0.000 loss_l1: 0.427006 loss_ssim: 0.931955 loss_hsv: 0.106278 loss_perceptual: 0.865376 loss: 1.897928
+2022-04-23 13:47:13,307 - TJU_VIPLab - INFO - Epoch 16, [158/500] lr: 0.001000 time: 0.005 loss_l1: 0.420019 loss_ssim: 0.859917 loss_hsv: 0.173855 loss_perceptual: 1.028159 loss: 1.967870
+2022-04-23 13:47:13,942 - TJU_VIPLab - INFO - Epoch 16, [159/500] lr: 0.001000 time: 0.000 loss_l1: 0.432968 loss_ssim: 0.874070 loss_hsv: 0.139317 loss_perceptual: 0.758440 loss: 1.825574
+2022-04-23 13:47:14,577 - TJU_VIPLab - INFO - Epoch 16, [160/500] lr: 0.001000 time: 0.000 loss_l1: 0.362640 loss_ssim: 0.756894 loss_hsv: 0.112097 loss_perceptual: 0.671932 loss: 1.567596
+2022-04-23 13:47:15,077 - TJU_VIPLab - INFO - 
+Start Epoch 17 -----------
+2022-04-23 13:47:17,622 - TJU_VIPLab - INFO - Epoch 17, [161/500] lr: 0.001000 time: 2.240 loss_l1: 0.390366 loss_ssim: 0.797074 loss_hsv: 0.078530 loss_perceptual: 0.760664 loss: 1.646303
+2022-04-23 13:47:18,287 - TJU_VIPLab - INFO - Epoch 17, [162/500] lr: 0.001000 time: 0.000 loss_l1: 0.427946 loss_ssim: 0.834893 loss_hsv: 0.115723 loss_perceptual: 0.765460 loss: 1.761293
+2022-04-23 13:47:18,922 - TJU_VIPLab - INFO - Epoch 17, [163/500] lr: 0.001000 time: 0.000 loss_l1: 0.341915 loss_ssim: 0.826003 loss_hsv: 0.059983 loss_perceptual: 1.029257 loss: 1.742530
+2022-04-23 13:47:19,562 - TJU_VIPLab - INFO - Epoch 17, [164/500] lr: 0.001000 time: 0.000 loss_l1: 0.346561 loss_ssim: 0.800249 loss_hsv: 0.133867 loss_perceptual: 1.024204 loss: 1.792780
+2022-04-23 13:47:20,192 - TJU_VIPLab - INFO - Epoch 17, [165/500] lr: 0.001000 time: 0.000 loss_l1: 0.425877 loss_ssim: 0.835648 loss_hsv: 0.161310 loss_perceptual: 1.184752 loss: 2.015211
+2022-04-23 13:47:20,942 - TJU_VIPLab - INFO - Epoch 17, [166/500] lr: 0.001000 time: 0.110 loss_l1: 0.309177 loss_ssim: 0.758657 loss_hsv: 0.104096 loss_perceptual: 1.115426 loss: 1.729643
+2022-04-23 13:47:21,582 - TJU_VIPLab - INFO - Epoch 17, [167/500] lr: 0.001000 time: 0.005 loss_l1: 0.392965 loss_ssim: 0.831216 loss_hsv: 0.100967 loss_perceptual: 0.941081 loss: 1.795689
+2022-04-23 13:47:22,222 - TJU_VIPLab - INFO - Epoch 17, [168/500] lr: 0.001000 time: 0.000 loss_l1: 0.419199 loss_ssim: 0.861975 loss_hsv: 0.171194 loss_perceptual: 1.099371 loss: 2.002054
+2022-04-23 13:47:22,872 - TJU_VIPLab - INFO - Epoch 17, [169/500] lr: 0.001000 time: 0.000 loss_l1: 0.470811 loss_ssim: 0.895490 loss_hsv: 0.154443 loss_perceptual: 0.815697 loss: 1.928593
+2022-04-23 13:47:23,602 - TJU_VIPLab - INFO - Epoch 17, [170/500] lr: 0.001000 time: 0.000 loss_l1: 0.360010 loss_ssim: 0.734345 loss_hsv: 0.114340 loss_perceptual: 0.669300 loss: 1.543345
+2022-04-23 13:47:24,098 - TJU_VIPLab - INFO - 
+Start Epoch 18 -----------
+2022-04-23 13:47:26,632 - TJU_VIPLab - INFO - Epoch 18, [171/500] lr: 0.001000 time: 2.235 loss_l1: 0.491106 loss_ssim: 0.838470 loss_hsv: 0.102090 loss_perceptual: 0.753741 loss: 1.808536
+2022-04-23 13:47:27,291 - TJU_VIPLab - INFO - Epoch 18, [172/500] lr: 0.001000 time: 0.000 loss_l1: 0.458245 loss_ssim: 0.874419 loss_hsv: 0.137265 loss_perceptual: 0.821126 loss: 1.880492
+2022-04-23 13:47:27,921 - TJU_VIPLab - INFO - Epoch 18, [173/500] lr: 0.001000 time: 0.000 loss_l1: 0.336785 loss_ssim: 0.819944 loss_hsv: 0.059380 loss_perceptual: 0.930913 loss: 1.681566
+2022-04-23 13:47:28,557 - TJU_VIPLab - INFO - Epoch 18, [174/500] lr: 0.001000 time: 0.000 loss_l1: 0.347149 loss_ssim: 0.781914 loss_hsv: 0.131937 loss_perceptual: 1.002393 loss: 1.762196
+2022-04-23 13:47:29,192 - TJU_VIPLab - INFO - Epoch 18, [175/500] lr: 0.001000 time: 0.000 loss_l1: 0.358553 loss_ssim: 0.770725 loss_hsv: 0.132049 loss_perceptual: 1.277179 loss: 1.899917
+2022-04-23 13:47:29,952 - TJU_VIPLab - INFO - Epoch 18, [176/500] lr: 0.001000 time: 0.116 loss_l1: 0.305058 loss_ssim: 0.743731 loss_hsv: 0.098294 loss_perceptual: 1.059945 loss: 1.677056
+2022-04-23 13:47:30,592 - TJU_VIPLab - INFO - Epoch 18, [177/500] lr: 0.001000 time: 0.000 loss_l1: 0.430282 loss_ssim: 0.876769 loss_hsv: 0.102613 loss_perceptual: 0.892073 loss: 1.855701
+2022-04-23 13:47:31,232 - TJU_VIPLab - INFO - Epoch 18, [178/500] lr: 0.001000 time: 0.000 loss_l1: 0.424800 loss_ssim: 0.846769 loss_hsv: 0.174231 loss_perceptual: 1.004381 loss: 1.947991
+2022-04-23 13:47:31,872 - TJU_VIPLab - INFO - Epoch 18, [179/500] lr: 0.001000 time: 0.010 loss_l1: 0.450080 loss_ssim: 0.906733 loss_hsv: 0.138244 loss_perceptual: 0.723499 loss: 1.856806
+2022-04-23 13:47:32,502 - TJU_VIPLab - INFO - Epoch 18, [180/500] lr: 0.001000 time: 0.000 loss_l1: 0.376976 loss_ssim: 0.752104 loss_hsv: 0.096282 loss_perceptual: 0.546466 loss: 1.498595
+2022-04-23 13:47:32,984 - TJU_VIPLab - INFO - 
+Start Epoch 19 -----------
+2022-04-23 13:47:35,532 - TJU_VIPLab - INFO - Epoch 19, [181/500] lr: 0.001000 time: 2.235 loss_l1: 0.479932 loss_ssim: 0.790893 loss_hsv: 0.096083 loss_perceptual: 0.790269 loss: 1.762043
+2022-04-23 13:47:36,162 - TJU_VIPLab - INFO - Epoch 19, [182/500] lr: 0.001000 time: 0.000 loss_l1: 0.423956 loss_ssim: 0.831027 loss_hsv: 0.117527 loss_perceptual: 0.709420 loss: 1.727220
+2022-04-23 13:47:36,802 - TJU_VIPLab - INFO - Epoch 19, [183/500] lr: 0.001000 time: 0.000 loss_l1: 0.345957 loss_ssim: 0.847021 loss_hsv: 0.062873 loss_perceptual: 0.881306 loss: 1.696504
+2022-04-23 13:47:37,442 - TJU_VIPLab - INFO - Epoch 19, [184/500] lr: 0.001000 time: 0.003 loss_l1: 0.337902 loss_ssim: 0.794104 loss_hsv: 0.130166 loss_perceptual: 0.995288 loss: 1.759816
+2022-04-23 13:47:38,077 - TJU_VIPLab - INFO - Epoch 19, [185/500] lr: 0.001000 time: 0.000 loss_l1: 0.409284 loss_ssim: 0.817857 loss_hsv: 0.159401 loss_perceptual: 1.094632 loss: 1.933858
+2022-04-23 13:47:38,825 - TJU_VIPLab - INFO - Epoch 19, [186/500] lr: 0.001000 time: 0.110 loss_l1: 0.291429 loss_ssim: 0.740104 loss_hsv: 0.103913 loss_perceptual: 1.008445 loss: 1.639668
+2022-04-23 13:47:39,462 - TJU_VIPLab - INFO - Epoch 19, [187/500] lr: 0.001000 time: 0.003 loss_l1: 0.458685 loss_ssim: 0.869401 loss_hsv: 0.094310 loss_perceptual: 0.822048 loss: 1.833420
+2022-04-23 13:47:40,099 - TJU_VIPLab - INFO - Epoch 19, [188/500] lr: 0.001000 time: 0.008 loss_l1: 0.414498 loss_ssim: 0.873964 loss_hsv: 0.172202 loss_perceptual: 1.066298 loss: 1.993813
+2022-04-23 13:47:40,732 - TJU_VIPLab - INFO - Epoch 19, [189/500] lr: 0.001000 time: 0.000 loss_l1: 0.435327 loss_ssim: 0.888401 loss_hsv: 0.139193 loss_perceptual: 0.718912 loss: 1.822377
+2022-04-23 13:47:41,372 - TJU_VIPLab - INFO - Epoch 19, [190/500] lr: 0.001000 time: 0.005 loss_l1: 0.370259 loss_ssim: 0.730916 loss_hsv: 0.096014 loss_perceptual: 0.584047 loss: 1.489213
+2022-04-23 13:47:41,872 - TJU_VIPLab - INFO - 
+Start Epoch 20 -----------
+2022-04-23 13:47:44,492 - TJU_VIPLab - INFO - Epoch 20, [191/500] lr: 0.001000 time: 2.275 loss_l1: 0.423264 loss_ssim: 0.748092 loss_hsv: 0.098941 loss_perceptual: 0.776452 loss: 1.658523
+2022-04-23 13:47:45,137 - TJU_VIPLab - INFO - Epoch 20, [192/500] lr: 0.001000 time: 0.000 loss_l1: 0.395360 loss_ssim: 0.781424 loss_hsv: 0.114539 loss_perceptual: 0.729238 loss: 1.655942
+2022-04-23 13:47:45,792 - TJU_VIPLab - INFO - Epoch 20, [193/500] lr: 0.001000 time: 0.000 loss_l1: 0.347847 loss_ssim: 0.827086 loss_hsv: 0.062119 loss_perceptual: 0.923818 loss: 1.698961
+2022-04-23 13:47:46,432 - TJU_VIPLab - INFO - Epoch 20, [194/500] lr: 0.001000 time: 0.005 loss_l1: 0.329717 loss_ssim: 0.752388 loss_hsv: 0.124209 loss_perceptual: 0.946022 loss: 1.679325
+2022-04-23 13:47:47,072 - TJU_VIPLab - INFO - Epoch 20, [195/500] lr: 0.001000 time: 0.000 loss_l1: 0.351379 loss_ssim: 0.766513 loss_hsv: 0.133648 loss_perceptual: 1.254442 loss: 1.878762
+2022-04-23 13:47:47,822 - TJU_VIPLab - INFO - Epoch 20, [196/500] lr: 0.001000 time: 0.111 loss_l1: 0.302281 loss_ssim: 0.736183 loss_hsv: 0.103418 loss_perceptual: 1.043869 loss: 1.663816
+2022-04-23 13:47:48,462 - TJU_VIPLab - INFO - Epoch 20, [197/500] lr: 0.001000 time: 0.000 loss_l1: 0.424065 loss_ssim: 0.914336 loss_hsv: 0.112823 loss_perceptual: 0.813071 loss: 1.857760
+2022-04-23 13:47:49,094 - TJU_VIPLab - INFO - Epoch 20, [198/500] lr: 0.001000 time: 0.000 loss_l1: 0.469659 loss_ssim: 0.962033 loss_hsv: 0.188721 loss_perceptual: 0.932173 loss: 2.086500
+2022-04-23 13:47:49,731 - TJU_VIPLab - INFO - Epoch 20, [199/500] lr: 0.001000 time: 0.000 loss_l1: 0.478903 loss_ssim: 0.913324 loss_hsv: 0.150693 loss_perceptual: 0.715695 loss: 1.900768
+2022-04-23 13:47:50,372 - TJU_VIPLab - INFO - Epoch 20, [200/500] lr: 0.001000 time: 0.000 loss_l1: 0.372674 loss_ssim: 0.755030 loss_hsv: 0.101274 loss_perceptual: 0.494714 loss: 1.476335
+2022-04-23 13:47:50,839 - TJU_VIPLab - INFO - 
+Start Epoch 21 -----------
+2022-04-23 13:47:53,466 - TJU_VIPLab - INFO - Epoch 21, [201/500] lr: 0.001000 time: 2.245 loss_l1: 0.473030 loss_ssim: 0.791136 loss_hsv: 0.090101 loss_perceptual: 0.729504 loss: 1.719019
+2022-04-23 13:47:54,102 - TJU_VIPLab - INFO - Epoch 21, [202/500] lr: 0.001000 time: 0.000 loss_l1: 0.443866 loss_ssim: 0.855395 loss_hsv: 0.133268 loss_perceptual: 0.791619 loss: 1.828338
+2022-04-23 13:47:54,742 - TJU_VIPLab - INFO - Epoch 21, [203/500] lr: 0.001000 time: 0.000 loss_l1: 0.349978 loss_ssim: 0.844441 loss_hsv: 0.061671 loss_perceptual: 0.817671 loss: 1.664925
+2022-04-23 13:47:55,382 - TJU_VIPLab - INFO - Epoch 21, [204/500] lr: 0.001000 time: 0.005 loss_l1: 0.335356 loss_ssim: 0.764714 loss_hsv: 0.130230 loss_perceptual: 0.964062 loss: 1.712330
+2022-04-23 13:47:56,022 - TJU_VIPLab - INFO - Epoch 21, [205/500] lr: 0.001000 time: 0.000 loss_l1: 0.347008 loss_ssim: 0.750918 loss_hsv: 0.133369 loss_perceptual: 1.290552 loss: 1.876570
+2022-04-23 13:47:56,797 - TJU_VIPLab - INFO - Epoch 21, [206/500] lr: 0.001000 time: 0.135 loss_l1: 0.299565 loss_ssim: 0.734924 loss_hsv: 0.103583 loss_perceptual: 1.046658 loss: 1.661402
+2022-04-23 13:47:57,432 - TJU_VIPLab - INFO - Epoch 21, [207/500] lr: 0.001000 time: 0.000 loss_l1: 0.410737 loss_ssim: 0.904908 loss_hsv: 0.120121 loss_perceptual: 0.770350 loss: 1.820941
+2022-04-23 13:47:58,072 - TJU_VIPLab - INFO - Epoch 21, [208/500] lr: 0.001000 time: 0.000 loss_l1: 0.439415 loss_ssim: 0.873685 loss_hsv: 0.177775 loss_perceptual: 0.932056 loss: 1.956902
+2022-04-23 13:47:58,713 - TJU_VIPLab - INFO - Epoch 21, [209/500] lr: 0.001000 time: 0.003 loss_l1: 0.455671 loss_ssim: 0.894232 loss_hsv: 0.137822 loss_perceptual: 0.787100 loss: 1.881275
+2022-04-23 13:47:59,352 - TJU_VIPLab - INFO - Epoch 21, [210/500] lr: 0.001000 time: 0.005 loss_l1: 0.360374 loss_ssim: 0.725150 loss_hsv: 0.124787 loss_perceptual: 0.619285 loss: 1.519953
+2022-04-23 13:47:59,862 - TJU_VIPLab - INFO - 
+Start Epoch 22 -----------
+2022-04-23 13:48:02,514 - TJU_VIPLab - INFO - Epoch 22, [211/500] lr: 0.001000 time: 2.302 loss_l1: 0.490211 loss_ssim: 0.789813 loss_hsv: 0.099526 loss_perceptual: 0.768568 loss: 1.763834
+2022-04-23 13:48:03,162 - TJU_VIPLab - INFO - Epoch 22, [212/500] lr: 0.001000 time: 0.000 loss_l1: 0.446955 loss_ssim: 0.855813 loss_hsv: 0.130322 loss_perceptual: 0.771672 loss: 1.818927
+2022-04-23 13:48:03,802 - TJU_VIPLab - INFO - Epoch 22, [213/500] lr: 0.001000 time: 0.000 loss_l1: 0.351110 loss_ssim: 0.829686 loss_hsv: 0.069978 loss_perceptual: 0.883585 loss: 1.692567
+2022-04-23 13:48:04,447 - TJU_VIPLab - INFO - Epoch 22, [214/500] lr: 0.001000 time: 0.000 loss_l1: 0.321197 loss_ssim: 0.752337 loss_hsv: 0.127545 loss_perceptual: 0.994784 loss: 1.698470
+2022-04-23 13:48:05,082 - TJU_VIPLab - INFO - Epoch 22, [215/500] lr: 0.001000 time: 0.000 loss_l1: 0.364475 loss_ssim: 0.759386 loss_hsv: 0.143987 loss_perceptual: 1.121757 loss: 1.828726
+2022-04-23 13:48:05,837 - TJU_VIPLab - INFO - Epoch 22, [216/500] lr: 0.001000 time: 0.110 loss_l1: 0.305862 loss_ssim: 0.764981 loss_hsv: 0.096775 loss_perceptual: 0.973858 loss: 1.654546
+2022-04-23 13:48:06,472 - TJU_VIPLab - INFO - Epoch 22, [217/500] lr: 0.001000 time: 0.000 loss_l1: 0.453829 loss_ssim: 0.935739 loss_hsv: 0.096730 loss_perceptual: 0.798635 loss: 1.885616
+2022-04-23 13:48:07,111 - TJU_VIPLab - INFO - Epoch 22, [218/500] lr: 0.001000 time: 0.000 loss_l1: 0.445107 loss_ssim: 0.931480 loss_hsv: 0.184982 loss_perceptual: 0.960832 loss: 2.041986
+2022-04-23 13:48:07,754 - TJU_VIPLab - INFO - Epoch 22, [219/500] lr: 0.001000 time: 0.000 loss_l1: 0.434635 loss_ssim: 0.870558 loss_hsv: 0.143913 loss_perceptual: 0.748671 loss: 1.823441
+2022-04-23 13:48:08,392 - TJU_VIPLab - INFO - Epoch 22, [220/500] lr: 0.001000 time: 0.003 loss_l1: 0.355705 loss_ssim: 0.698547 loss_hsv: 0.096924 loss_perceptual: 0.572948 loss: 1.437651
+2022-04-23 13:48:08,863 - TJU_VIPLab - INFO - 
+Start Epoch 23 -----------
+2022-04-23 13:48:11,522 - TJU_VIPLab - INFO - Epoch 23, [221/500] lr: 0.001000 time: 2.278 loss_l1: 0.479373 loss_ssim: 0.774228 loss_hsv: 0.099991 loss_perceptual: 0.748908 loss: 1.728045
+2022-04-23 13:48:12,175 - TJU_VIPLab - INFO - Epoch 23, [222/500] lr: 0.001000 time: 0.000 loss_l1: 0.414069 loss_ssim: 0.805376 loss_hsv: 0.127950 loss_perceptual: 0.750977 loss: 1.722884
+2022-04-23 13:48:12,811 - TJU_VIPLab - INFO - Epoch 23, [223/500] lr: 0.001000 time: 0.000 loss_l1: 0.349736 loss_ssim: 0.810495 loss_hsv: 0.077563 loss_perceptual: 0.836303 loss: 1.655946
+2022-04-23 13:48:13,451 - TJU_VIPLab - INFO - Epoch 23, [224/500] lr: 0.001000 time: 0.000 loss_l1: 0.338334 loss_ssim: 0.754824 loss_hsv: 0.134459 loss_perceptual: 0.917771 loss: 1.686503
+2022-04-23 13:48:14,092 - TJU_VIPLab - INFO - Epoch 23, [225/500] lr: 0.001000 time: 0.000 loss_l1: 0.334736 loss_ssim: 0.748944 loss_hsv: 0.129919 loss_perceptual: 1.195435 loss: 1.811317
+2022-04-23 13:48:14,841 - TJU_VIPLab - INFO - Epoch 23, [226/500] lr: 0.001000 time: 0.121 loss_l1: 0.293731 loss_ssim: 0.720323 loss_hsv: 0.102614 loss_perceptual: 1.013329 loss: 1.623333
+2022-04-23 13:48:15,482 - TJU_VIPLab - INFO - Epoch 23, [227/500] lr: 0.001000 time: 0.000 loss_l1: 0.420987 loss_ssim: 0.856730 loss_hsv: 0.105526 loss_perceptual: 0.820986 loss: 1.793736
+2022-04-23 13:48:16,123 - TJU_VIPLab - INFO - Epoch 23, [228/500] lr: 0.001000 time: 0.002 loss_l1: 0.409743 loss_ssim: 0.855544 loss_hsv: 0.179227 loss_perceptual: 0.979276 loss: 1.934152
+2022-04-23 13:48:16,783 - TJU_VIPLab - INFO - Epoch 23, [229/500] lr: 0.001000 time: 0.000 loss_l1: 0.446505 loss_ssim: 0.877935 loss_hsv: 0.142081 loss_perceptual: 0.764593 loss: 1.848819
+2022-04-23 13:48:17,431 - TJU_VIPLab - INFO - Epoch 23, [230/500] lr: 0.001000 time: 0.000 loss_l1: 0.364779 loss_ssim: 0.735518 loss_hsv: 0.102392 loss_perceptual: 0.556842 loss: 1.481110
+2022-04-23 13:48:17,912 - TJU_VIPLab - INFO - 
+Start Epoch 24 -----------
+2022-04-23 13:48:20,482 - TJU_VIPLab - INFO - Epoch 24, [231/500] lr: 0.001000 time: 2.285 loss_l1: 0.370444 loss_ssim: 0.735175 loss_hsv: 0.091380 loss_perceptual: 0.717989 loss: 1.555993
+2022-04-23 13:48:21,124 - TJU_VIPLab - INFO - Epoch 24, [232/500] lr: 0.001000 time: 0.000 loss_l1: 0.424213 loss_ssim: 0.810159 loss_hsv: 0.121446 loss_perceptual: 0.713709 loss: 1.712673
+2022-04-23 13:48:21,792 - TJU_VIPLab - INFO - Epoch 24, [233/500] lr: 0.001000 time: 0.002 loss_l1: 0.342804 loss_ssim: 0.796372 loss_hsv: 0.068583 loss_perceptual: 0.894470 loss: 1.654995
+2022-04-23 13:48:22,432 - TJU_VIPLab - INFO - Epoch 24, [234/500] lr: 0.001000 time: 0.000 loss_l1: 0.313160 loss_ssim: 0.717250 loss_hsv: 0.126213 loss_perceptual: 0.955638 loss: 1.634442
+2022-04-23 13:48:23,082 - TJU_VIPLab - INFO - Epoch 24, [235/500] lr: 0.001000 time: 0.000 loss_l1: 0.339299 loss_ssim: 0.740410 loss_hsv: 0.137843 loss_perceptual: 1.130399 loss: 1.782752
+2022-04-23 13:48:23,832 - TJU_VIPLab - INFO - Epoch 24, [236/500] lr: 0.001000 time: 0.117 loss_l1: 0.293402 loss_ssim: 0.719096 loss_hsv: 0.103546 loss_perceptual: 0.984531 loss: 1.608309
+2022-04-23 13:48:24,473 - TJU_VIPLab - INFO - Epoch 24, [237/500] lr: 0.001000 time: 0.000 loss_l1: 0.433933 loss_ssim: 0.855978 loss_hsv: 0.103166 loss_perceptual: 0.800436 loss: 1.793295
+2022-04-23 13:48:25,114 - TJU_VIPLab - INFO - Epoch 24, [238/500] lr: 0.001000 time: 0.000 loss_l1: 0.399851 loss_ssim: 0.816573 loss_hsv: 0.173573 loss_perceptual: 0.972101 loss: 1.876048
+2022-04-23 13:48:25,785 - TJU_VIPLab - INFO - Epoch 24, [239/500] lr: 0.001000 time: 0.000 loss_l1: 0.427406 loss_ssim: 0.864057 loss_hsv: 0.147653 loss_perceptual: 0.663104 loss: 1.770668
+2022-04-23 13:48:26,423 - TJU_VIPLab - INFO - Epoch 24, [240/500] lr: 0.001000 time: 0.004 loss_l1: 0.341666 loss_ssim: 0.682325 loss_hsv: 0.119990 loss_perceptual: 0.609721 loss: 1.448842
+2022-04-23 13:48:26,893 - TJU_VIPLab - INFO - 
+Start Epoch 25 -----------
+2022-04-23 13:48:29,487 - TJU_VIPLab - INFO - Epoch 25, [241/500] lr: 0.001000 time: 2.263 loss_l1: 0.402268 loss_ssim: 0.748296 loss_hsv: 0.077072 loss_perceptual: 0.726035 loss: 1.590654
+2022-04-23 13:48:30,132 - TJU_VIPLab - INFO - Epoch 25, [242/500] lr: 0.001000 time: 0.000 loss_l1: 0.426803 loss_ssim: 0.837313 loss_hsv: 0.134732 loss_perceptual: 0.740616 loss: 1.769156
+2022-04-23 13:48:30,792 - TJU_VIPLab - INFO - Epoch 25, [243/500] lr: 0.001000 time: 0.000 loss_l1: 0.339389 loss_ssim: 0.784608 loss_hsv: 0.072132 loss_perceptual: 0.819318 loss: 1.605789
+2022-04-23 13:48:31,434 - TJU_VIPLab - INFO - Epoch 25, [244/500] lr: 0.001000 time: 0.000 loss_l1: 0.323597 loss_ssim: 0.733867 loss_hsv: 0.133162 loss_perceptual: 0.920641 loss: 1.650947
+2022-04-23 13:48:32,072 - TJU_VIPLab - INFO - Epoch 25, [245/500] lr: 0.001000 time: 0.000 loss_l1: 0.343025 loss_ssim: 0.750683 loss_hsv: 0.139836 loss_perceptual: 1.275236 loss: 1.871162
+2022-04-23 13:48:32,817 - TJU_VIPLab - INFO - Epoch 25, [246/500] lr: 0.001000 time: 0.100 loss_l1: 0.292809 loss_ssim: 0.729346 loss_hsv: 0.113635 loss_perceptual: 0.974263 loss: 1.622922
+2022-04-23 13:48:33,460 - TJU_VIPLab - INFO - Epoch 25, [247/500] lr: 0.001000 time: 0.000 loss_l1: 0.344433 loss_ssim: 0.794100 loss_hsv: 0.111487 loss_perceptual: 0.887795 loss: 1.693918
+2022-04-23 13:48:34,097 - TJU_VIPLab - INFO - Epoch 25, [248/500] lr: 0.001000 time: 0.000 loss_l1: 0.396944 loss_ssim: 0.828237 loss_hsv: 0.175303 loss_perceptual: 0.951175 loss: 1.876072
+2022-04-23 13:48:34,742 - TJU_VIPLab - INFO - Epoch 25, [249/500] lr: 0.001000 time: 0.000 loss_l1: 0.440507 loss_ssim: 0.865519 loss_hsv: 0.149642 loss_perceptual: 0.686148 loss: 1.798742
+2022-04-23 13:48:35,382 - TJU_VIPLab - INFO - Epoch 25, [250/500] lr: 0.001000 time: 0.000 loss_l1: 0.331326 loss_ssim: 0.693094 loss_hsv: 0.125105 loss_perceptual: 0.613494 loss: 1.456273
+2022-04-23 13:48:35,859 - TJU_VIPLab - INFO - 
+Start Epoch 26 -----------
+2022-04-23 13:48:38,487 - TJU_VIPLab - INFO - Epoch 26, [251/500] lr: 0.001000 time: 2.300 loss_l1: 0.499497 loss_ssim: 0.818659 loss_hsv: 0.088511 loss_perceptual: 0.681952 loss: 1.747643
+2022-04-23 13:48:39,122 - TJU_VIPLab - INFO - Epoch 26, [252/500] lr: 0.001000 time: 0.000 loss_l1: 0.440131 loss_ssim: 0.819795 loss_hsv: 0.128990 loss_perceptual: 0.707304 loss: 1.742568
+2022-04-23 13:48:39,792 - TJU_VIPLab - INFO - Epoch 26, [253/500] lr: 0.001000 time: 0.000 loss_l1: 0.356178 loss_ssim: 0.855021 loss_hsv: 0.077851 loss_perceptual: 0.879633 loss: 1.728866
+2022-04-23 13:48:40,438 - TJU_VIPLab - INFO - Epoch 26, [254/500] lr: 0.001000 time: 0.000 loss_l1: 0.322718 loss_ssim: 0.756699 loss_hsv: 0.124831 loss_perceptual: 0.949919 loss: 1.679208
+2022-04-23 13:48:41,083 - TJU_VIPLab - INFO - Epoch 26, [255/500] lr: 0.001000 time: 0.005 loss_l1: 0.346765 loss_ssim: 0.754155 loss_hsv: 0.140269 loss_perceptual: 1.337232 loss: 1.909806
+2022-04-23 13:48:41,832 - TJU_VIPLab - INFO - Epoch 26, [256/500] lr: 0.001000 time: 0.120 loss_l1: 0.291866 loss_ssim: 0.726964 loss_hsv: 0.106091 loss_perceptual: 1.018993 loss: 1.634417
+2022-04-23 13:48:42,482 - TJU_VIPLab - INFO - Epoch 26, [257/500] lr: 0.001000 time: 0.000 loss_l1: 0.405522 loss_ssim: 0.862595 loss_hsv: 0.112216 loss_perceptual: 0.762767 loss: 1.761716
+2022-04-23 13:48:43,112 - TJU_VIPLab - INFO - Epoch 26, [258/500] lr: 0.001000 time: 0.000 loss_l1: 0.401061 loss_ssim: 0.836708 loss_hsv: 0.181108 loss_perceptual: 0.999786 loss: 1.918770
+2022-04-23 13:48:43,787 - TJU_VIPLab - INFO - Epoch 26, [259/500] lr: 0.001000 time: 0.000 loss_l1: 0.441575 loss_ssim: 0.848218 loss_hsv: 0.152736 loss_perceptual: 0.664857 loss: 1.774957
+2022-04-23 13:48:44,422 - TJU_VIPLab - INFO - Epoch 26, [260/500] lr: 0.001000 time: 0.000 loss_l1: 0.363417 loss_ssim: 0.723811 loss_hsv: 0.113270 loss_perceptual: 0.578521 loss: 1.489758
+2022-04-23 13:48:44,945 - TJU_VIPLab - INFO - 
+Start Epoch 27 -----------
+2022-04-23 13:48:47,572 - TJU_VIPLab - INFO - Epoch 27, [261/500] lr: 0.001000 time: 2.325 loss_l1: 0.424869 loss_ssim: 0.727342 loss_hsv: 0.091170 loss_perceptual: 0.730708 loss: 1.608735
+2022-04-23 13:48:48,222 - TJU_VIPLab - INFO - Epoch 27, [262/500] lr: 0.001000 time: 0.000 loss_l1: 0.411985 loss_ssim: 0.793457 loss_hsv: 0.132973 loss_perceptual: 0.741900 loss: 1.709364
+2022-04-23 13:48:48,852 - TJU_VIPLab - INFO - Epoch 27, [263/500] lr: 0.001000 time: 0.000 loss_l1: 0.352034 loss_ssim: 0.812413 loss_hsv: 0.076131 loss_perceptual: 0.757819 loss: 1.619488
+2022-04-23 13:48:49,507 - TJU_VIPLab - INFO - Epoch 27, [264/500] lr: 0.001000 time: 0.000 loss_l1: 0.323288 loss_ssim: 0.737776 loss_hsv: 0.133967 loss_perceptual: 0.889861 loss: 1.639961
+2022-04-23 13:48:50,157 - TJU_VIPLab - INFO - Epoch 27, [265/500] lr: 0.001000 time: 0.000 loss_l1: 0.355604 loss_ssim: 0.756251 loss_hsv: 0.146449 loss_perceptual: 1.206497 loss: 1.861552
+2022-04-23 13:48:50,930 - TJU_VIPLab - INFO - Epoch 27, [266/500] lr: 0.001000 time: 0.115 loss_l1: 0.297894 loss_ssim: 0.742560 loss_hsv: 0.090676 loss_perceptual: 1.018679 loss: 1.640470
+2022-04-23 13:48:51,592 - TJU_VIPLab - INFO - Epoch 27, [267/500] lr: 0.001000 time: 0.001 loss_l1: 0.417499 loss_ssim: 0.880312 loss_hsv: 0.113098 loss_perceptual: 0.707457 loss: 1.764638
+2022-04-23 13:48:52,242 - TJU_VIPLab - INFO - Epoch 27, [268/500] lr: 0.001000 time: 0.001 loss_l1: 0.423291 loss_ssim: 0.851719 loss_hsv: 0.185693 loss_perceptual: 0.890764 loss: 1.906086
+2022-04-23 13:48:52,881 - TJU_VIPLab - INFO - Epoch 27, [269/500] lr: 0.001000 time: 0.000 loss_l1: 0.429181 loss_ssim: 0.865117 loss_hsv: 0.137413 loss_perceptual: 0.625915 loss: 1.744669
+2022-04-23 13:48:53,542 - TJU_VIPLab - INFO - Epoch 27, [270/500] lr: 0.001000 time: 0.001 loss_l1: 0.358856 loss_ssim: 0.716858 loss_hsv: 0.115503 loss_perceptual: 0.605947 loss: 1.494190
+2022-04-23 13:48:54,039 - TJU_VIPLab - INFO - 
+Start Epoch 28 -----------
+2022-04-23 13:48:57,864 - TJU_VIPLab - INFO - Epoch 28, [271/500] lr: 0.001000 time: 3.095 loss_l1: 0.469234 loss_ssim: 0.756098 loss_hsv: 0.112575 loss_perceptual: 0.690519 loss: 1.683166
+2022-04-23 13:48:58,632 - TJU_VIPLab - INFO - Epoch 28, [272/500] lr: 0.001000 time: 0.000 loss_l1: 0.384689 loss_ssim: 0.772087 loss_hsv: 0.118701 loss_perceptual: 0.762132 loss: 1.656543
+2022-04-23 13:48:59,412 - TJU_VIPLab - INFO - Epoch 28, [273/500] lr: 0.001000 time: 0.000 loss_l1: 0.352957 loss_ssim: 0.839548 loss_hsv: 0.083138 loss_perceptual: 0.789265 loss: 1.670276
+2022-04-23 13:49:00,077 - TJU_VIPLab - INFO - Epoch 28, [274/500] lr: 0.001000 time: 0.005 loss_l1: 0.307091 loss_ssim: 0.712351 loss_hsv: 0.129194 loss_perceptual: 0.970580 loss: 1.633927
+2022-04-23 13:49:00,787 - TJU_VIPLab - INFO - Epoch 28, [275/500] lr: 0.001000 time: 0.000 loss_l1: 0.351027 loss_ssim: 0.742416 loss_hsv: 0.150835 loss_perceptual: 1.059173 loss: 1.773865
+2022-04-23 13:49:01,875 - TJU_VIPLab - INFO - Epoch 28, [276/500] lr: 0.001000 time: 0.263 loss_l1: 0.303083 loss_ssim: 0.751701 loss_hsv: 0.114528 loss_perceptual: 0.978171 loss: 1.658398
+2022-04-23 13:49:02,532 - TJU_VIPLab - INFO - Epoch 28, [277/500] lr: 0.001000 time: 0.000 loss_l1: 0.358516 loss_ssim: 0.789503 loss_hsv: 0.110515 loss_perceptual: 0.816555 loss: 1.666811
+2022-04-23 13:49:03,187 - TJU_VIPLab - INFO - Epoch 28, [278/500] lr: 0.001000 time: 0.000 loss_l1: 0.418682 loss_ssim: 0.886733 loss_hsv: 0.179030 loss_perceptual: 0.922866 loss: 1.945878
+2022-04-23 13:49:03,847 - TJU_VIPLab - INFO - Epoch 28, [279/500] lr: 0.001000 time: 0.000 loss_l1: 0.423261 loss_ssim: 0.809951 loss_hsv: 0.145877 loss_perceptual: 0.695927 loss: 1.727052
+2022-04-23 13:49:04,608 - TJU_VIPLab - INFO - Epoch 28, [280/500] lr: 0.001000 time: 0.000 loss_l1: 0.366555 loss_ssim: 0.676704 loss_hsv: 0.102741 loss_perceptual: 0.561381 loss: 1.426691
+2022-04-23 13:49:05,282 - TJU_VIPLab - INFO - 
+Start Epoch 29 -----------
+2022-04-23 13:49:08,016 - TJU_VIPLab - INFO - Epoch 29, [281/500] lr: 0.001000 time: 2.540 loss_l1: 0.443215 loss_ssim: 0.731610 loss_hsv: 0.091429 loss_perceptual: 0.747585 loss: 1.640047
+2022-04-23 13:49:08,657 - TJU_VIPLab - INFO - Epoch 29, [282/500] lr: 0.001000 time: 0.001 loss_l1: 0.399578 loss_ssim: 0.777124 loss_hsv: 0.123489 loss_perceptual: 0.672101 loss: 1.636241
+2022-04-23 13:49:09,302 - TJU_VIPLab - INFO - Epoch 29, [283/500] lr: 0.001000 time: 0.001 loss_l1: 0.348495 loss_ssim: 0.786767 loss_hsv: 0.069780 loss_perceptual: 0.833269 loss: 1.621676
+2022-04-23 13:49:09,954 - TJU_VIPLab - INFO - Epoch 29, [284/500] lr: 0.001000 time: 0.001 loss_l1: 0.321248 loss_ssim: 0.727485 loss_hsv: 0.135313 loss_perceptual: 0.902420 loss: 1.635256
+2022-04-23 13:49:10,606 - TJU_VIPLab - INFO - Epoch 29, [285/500] lr: 0.001000 time: 0.000 loss_l1: 0.315445 loss_ssim: 0.709135 loss_hsv: 0.131412 loss_perceptual: 1.190374 loss: 1.751179
+2022-04-23 13:49:11,374 - TJU_VIPLab - INFO - Epoch 29, [286/500] lr: 0.001000 time: 0.126 loss_l1: 0.296955 loss_ssim: 0.726167 loss_hsv: 0.107717 loss_perceptual: 0.963801 loss: 1.612740
+2022-04-23 13:49:12,026 - TJU_VIPLab - INFO - Epoch 29, [287/500] lr: 0.001000 time: 0.000 loss_l1: 0.385552 loss_ssim: 0.854237 loss_hsv: 0.118924 loss_perceptual: 0.731657 loss: 1.724542
+2022-04-23 13:49:12,672 - TJU_VIPLab - INFO - Epoch 29, [288/500] lr: 0.001000 time: 0.001 loss_l1: 0.402142 loss_ssim: 0.841690 loss_hsv: 0.183766 loss_perceptual: 0.948979 loss: 1.902087
+2022-04-23 13:49:13,317 - TJU_VIPLab - INFO - Epoch 29, [289/500] lr: 0.001000 time: 0.000 loss_l1: 0.449556 loss_ssim: 0.830417 loss_hsv: 0.154060 loss_perceptual: 0.741070 loss: 1.804568
+2022-04-23 13:49:13,962 - TJU_VIPLab - INFO - Epoch 29, [290/500] lr: 0.001000 time: 0.000 loss_l1: 0.324818 loss_ssim: 0.649980 loss_hsv: 0.130026 loss_perceptual: 0.603103 loss: 1.406375
+2022-04-23 13:49:14,466 - TJU_VIPLab - INFO - 
+Start Epoch 30 -----------
+2022-04-23 13:49:17,122 - TJU_VIPLab - INFO - Epoch 30, [291/500] lr: 0.001000 time: 2.310 loss_l1: 0.465815 loss_ssim: 0.793012 loss_hsv: 0.106353 loss_perceptual: 0.658217 loss: 1.694289
+2022-04-23 13:49:17,792 - TJU_VIPLab - INFO - Epoch 30, [292/500] lr: 0.001000 time: 0.000 loss_l1: 0.380722 loss_ssim: 0.760204 loss_hsv: 0.123452 loss_perceptual: 0.685108 loss: 1.606932
+2022-04-23 13:49:18,431 - TJU_VIPLab - INFO - Epoch 30, [293/500] lr: 0.001000 time: 0.000 loss_l1: 0.351679 loss_ssim: 0.812379 loss_hsv: 0.088439 loss_perceptual: 0.816734 loss: 1.660864
+2022-04-23 13:49:19,082 - TJU_VIPLab - INFO - Epoch 30, [294/500] lr: 0.001000 time: 0.000 loss_l1: 0.305465 loss_ssim: 0.703123 loss_hsv: 0.129497 loss_perceptual: 0.946921 loss: 1.611546
+2022-04-23 13:49:19,732 - TJU_VIPLab - INFO - Epoch 30, [295/500] lr: 0.001000 time: 0.009 loss_l1: 0.328052 loss_ssim: 0.710604 loss_hsv: 0.141243 loss_perceptual: 1.281581 loss: 1.820689
+2022-04-23 13:49:20,482 - TJU_VIPLab - INFO - Epoch 30, [296/500] lr: 0.001000 time: 0.100 loss_l1: 0.296232 loss_ssim: 0.716751 loss_hsv: 0.119903 loss_perceptual: 0.963304 loss: 1.614539
+2022-04-23 13:49:21,132 - TJU_VIPLab - INFO - Epoch 30, [297/500] lr: 0.001000 time: 0.000 loss_l1: 0.443877 loss_ssim: 0.843349 loss_hsv: 0.103754 loss_perceptual: 0.760432 loss: 1.771196
+2022-04-23 13:49:21,802 - TJU_VIPLab - INFO - Epoch 30, [298/500] lr: 0.001000 time: 0.000 loss_l1: 0.389743 loss_ssim: 0.772642 loss_hsv: 0.173945 loss_perceptual: 0.888038 loss: 1.780349
+2022-04-23 13:49:22,452 - TJU_VIPLab - INFO - Epoch 30, [299/500] lr: 0.001000 time: 0.000 loss_l1: 0.422411 loss_ssim: 0.812157 loss_hsv: 0.146627 loss_perceptual: 0.637971 loss: 1.700181
+2022-04-23 13:49:23,092 - TJU_VIPLab - INFO - Epoch 30, [300/500] lr: 0.001000 time: 0.000 loss_l1: 0.339928 loss_ssim: 0.674602 loss_hsv: 0.128501 loss_perceptual: 0.588208 loss: 1.437136
+2022-04-23 13:49:23,570 - TJU_VIPLab - INFO - 
+Start Epoch 31 -----------
+2022-04-23 13:49:26,182 - TJU_VIPLab - INFO - Epoch 31, [301/500] lr: 0.001000 time: 2.285 loss_l1: 0.431989 loss_ssim: 0.741696 loss_hsv: 0.078206 loss_perceptual: 0.704834 loss: 1.604308
+2022-04-23 13:49:26,832 - TJU_VIPLab - INFO - Epoch 31, [302/500] lr: 0.001000 time: 0.000 loss_l1: 0.405726 loss_ssim: 0.778175 loss_hsv: 0.125125 loss_perceptual: 0.744429 loss: 1.681241
+2022-04-23 13:49:27,482 - TJU_VIPLab - INFO - Epoch 31, [303/500] lr: 0.001000 time: 0.000 loss_l1: 0.340936 loss_ssim: 0.770909 loss_hsv: 0.067598 loss_perceptual: 0.838591 loss: 1.598739
+2022-04-23 13:49:28,122 - TJU_VIPLab - INFO - Epoch 31, [304/500] lr: 0.001000 time: 0.000 loss_l1: 0.296739 loss_ssim: 0.703252 loss_hsv: 0.126066 loss_perceptual: 0.903212 loss: 1.577663
+2022-04-23 13:49:28,802 - TJU_VIPLab - INFO - Epoch 31, [305/500] lr: 0.001000 time: 0.000 loss_l1: 0.313654 loss_ssim: 0.686435 loss_hsv: 0.129084 loss_perceptual: 1.197482 loss: 1.727915
+2022-04-23 13:49:29,556 - TJU_VIPLab - INFO - Epoch 31, [306/500] lr: 0.001000 time: 0.113 loss_l1: 0.278326 loss_ssim: 0.701862 loss_hsv: 0.104491 loss_perceptual: 1.033937 loss: 1.601648
+2022-04-23 13:49:30,203 - TJU_VIPLab - INFO - Epoch 31, [307/500] lr: 0.001000 time: 0.000 loss_l1: 0.383745 loss_ssim: 0.770167 loss_hsv: 0.100322 loss_perceptual: 0.777155 loss: 1.642813
+2022-04-23 13:49:30,858 - TJU_VIPLab - INFO - Epoch 31, [308/500] lr: 0.001000 time: 0.000 loss_l1: 0.377791 loss_ssim: 0.784359 loss_hsv: 0.177980 loss_perceptual: 0.949488 loss: 1.814874
+2022-04-23 13:49:31,502 - TJU_VIPLab - INFO - Epoch 31, [309/500] lr: 0.001000 time: 0.000 loss_l1: 0.423134 loss_ssim: 0.794284 loss_hsv: 0.162977 loss_perceptual: 0.699750 loss: 1.730270
+2022-04-23 13:49:32,152 - TJU_VIPLab - INFO - Epoch 31, [310/500] lr: 0.001000 time: 0.000 loss_l1: 0.346698 loss_ssim: 0.681909 loss_hsv: 0.110066 loss_perceptual: 0.530595 loss: 1.403971
+2022-04-23 13:49:32,682 - TJU_VIPLab - INFO - 
+Start Epoch 32 -----------
+2022-04-23 13:49:35,291 - TJU_VIPLab - INFO - Epoch 32, [311/500] lr: 0.001000 time: 2.330 loss_l1: 0.453007 loss_ssim: 0.701184 loss_hsv: 0.093517 loss_perceptual: 0.697474 loss: 1.596445
+2022-04-23 13:49:35,942 - TJU_VIPLab - INFO - Epoch 32, [312/500] lr: 0.001000 time: 0.000 loss_l1: 0.432221 loss_ssim: 0.806113 loss_hsv: 0.131366 loss_perceptual: 0.737283 loss: 1.738341
+2022-04-23 13:49:36,581 - TJU_VIPLab - INFO - Epoch 32, [313/500] lr: 0.001000 time: 0.000 loss_l1: 0.348237 loss_ssim: 0.829938 loss_hsv: 0.082303 loss_perceptual: 0.802740 loss: 1.661848
+2022-04-23 13:49:37,236 - TJU_VIPLab - INFO - Epoch 32, [314/500] lr: 0.001000 time: 0.000 loss_l1: 0.307433 loss_ssim: 0.702507 loss_hsv: 0.127103 loss_perceptual: 0.943057 loss: 1.608572
+2022-04-23 13:49:37,882 - TJU_VIPLab - INFO - Epoch 32, [315/500] lr: 0.001000 time: 0.000 loss_l1: 0.325479 loss_ssim: 0.709703 loss_hsv: 0.147542 loss_perceptual: 1.091806 loss: 1.728628
+2022-04-23 13:49:38,636 - TJU_VIPLab - INFO - Epoch 32, [316/500] lr: 0.001000 time: 0.109 loss_l1: 0.301119 loss_ssim: 0.725420 loss_hsv: 0.116272 loss_perceptual: 0.898238 loss: 1.591930
+2022-04-23 13:49:39,302 - TJU_VIPLab - INFO - Epoch 32, [317/500] lr: 0.001000 time: 0.000 loss_l1: 0.468386 loss_ssim: 0.945795 loss_hsv: 0.092063 loss_perceptual: 0.678554 loss: 1.845521
+2022-04-23 13:49:39,952 - TJU_VIPLab - INFO - Epoch 32, [318/500] lr: 0.001000 time: 0.005 loss_l1: 0.394631 loss_ssim: 0.794968 loss_hsv: 0.180070 loss_perceptual: 0.873232 loss: 1.806285
+2022-04-23 13:49:40,597 - TJU_VIPLab - INFO - Epoch 32, [319/500] lr: 0.001000 time: 0.000 loss_l1: 0.396581 loss_ssim: 0.733019 loss_hsv: 0.151640 loss_perceptual: 0.683317 loss: 1.622899
+2022-04-23 13:49:41,247 - TJU_VIPLab - INFO - Epoch 32, [320/500] lr: 0.001000 time: 0.000 loss_l1: 0.347932 loss_ssim: 0.654754 loss_hsv: 0.125419 loss_perceptual: 0.619347 loss: 1.437779
+2022-04-23 13:49:41,749 - TJU_VIPLab - INFO - 
+Start Epoch 33 -----------
+2022-04-23 13:49:44,391 - TJU_VIPLab - INFO - Epoch 33, [321/500] lr: 0.001000 time: 2.345 loss_l1: 0.483478 loss_ssim: 0.779438 loss_hsv: 0.089491 loss_perceptual: 0.705500 loss: 1.705157
+2022-04-23 13:49:45,033 - TJU_VIPLab - INFO - Epoch 33, [322/500] lr: 0.001000 time: 0.000 loss_l1: 0.408502 loss_ssim: 0.794167 loss_hsv: 0.122000 loss_perceptual: 0.798324 loss: 1.723831
+2022-04-23 13:49:45,692 - TJU_VIPLab - INFO - Epoch 33, [323/500] lr: 0.001000 time: 0.000 loss_l1: 0.334367 loss_ssim: 0.747184 loss_hsv: 0.070325 loss_perceptual: 0.904294 loss: 1.604023
+2022-04-23 13:49:46,347 - TJU_VIPLab - INFO - Epoch 33, [324/500] lr: 0.001000 time: 0.000 loss_l1: 0.303582 loss_ssim: 0.729152 loss_hsv: 0.126173 loss_perceptual: 0.914930 loss: 1.616372
+2022-04-23 13:49:47,002 - TJU_VIPLab - INFO - Epoch 33, [325/500] lr: 0.001000 time: 0.000 loss_l1: 0.313436 loss_ssim: 0.689744 loss_hsv: 0.122088 loss_perceptual: 1.152494 loss: 1.701515
+2022-04-23 13:49:47,752 - TJU_VIPLab - INFO - Epoch 33, [326/500] lr: 0.001000 time: 0.109 loss_l1: 0.291464 loss_ssim: 0.725154 loss_hsv: 0.106040 loss_perceptual: 0.928676 loss: 1.586996
+2022-04-23 13:49:48,402 - TJU_VIPLab - INFO - Epoch 33, [327/500] lr: 0.001000 time: 0.000 loss_l1: 0.415295 loss_ssim: 0.861806 loss_hsv: 0.115336 loss_perceptual: 0.658694 loss: 1.721784
+2022-04-23 13:49:49,042 - TJU_VIPLab - INFO - Epoch 33, [328/500] lr: 0.001000 time: 0.000 loss_l1: 0.383522 loss_ssim: 0.816095 loss_hsv: 0.175200 loss_perceptual: 0.840293 loss: 1.794964
+2022-04-23 13:49:49,695 - TJU_VIPLab - INFO - Epoch 33, [329/500] lr: 0.001000 time: 0.003 loss_l1: 0.442412 loss_ssim: 0.779904 loss_hsv: 0.155219 loss_perceptual: 0.664745 loss: 1.709907
+2022-04-23 13:49:50,342 - TJU_VIPLab - INFO - Epoch 33, [330/500] lr: 0.001000 time: 0.000 loss_l1: 0.320047 loss_ssim: 0.644354 loss_hsv: 0.126954 loss_perceptual: 0.606366 loss: 1.394538
+2022-04-23 13:49:50,922 - TJU_VIPLab - INFO - 
+Start Epoch 34 -----------
+2022-04-23 13:49:53,686 - TJU_VIPLab - INFO - Epoch 34, [331/500] lr: 0.001000 time: 2.395 loss_l1: 0.470074 loss_ssim: 0.768419 loss_hsv: 0.105344 loss_perceptual: 0.690592 loss: 1.689133
+2022-04-23 13:49:54,332 - TJU_VIPLab - INFO - Epoch 34, [332/500] lr: 0.001000 time: 0.000 loss_l1: 0.391256 loss_ssim: 0.771783 loss_hsv: 0.129015 loss_perceptual: 0.669676 loss: 1.626893
+2022-04-23 13:49:54,982 - TJU_VIPLab - INFO - Epoch 34, [333/500] lr: 0.001000 time: 0.005 loss_l1: 0.358514 loss_ssim: 0.846996 loss_hsv: 0.089677 loss_perceptual: 0.759158 loss: 1.674766
+2022-04-23 13:49:55,637 - TJU_VIPLab - INFO - Epoch 34, [334/500] lr: 0.001000 time: 0.000 loss_l1: 0.326625 loss_ssim: 0.736596 loss_hsv: 0.136078 loss_perceptual: 0.917200 loss: 1.657899
+2022-04-23 13:49:56,314 - TJU_VIPLab - INFO - Epoch 34, [335/500] lr: 0.001000 time: 0.000 loss_l1: 0.324096 loss_ssim: 0.676834 loss_hsv: 0.140223 loss_perceptual: 1.278262 loss: 1.780284
+2022-04-23 13:49:57,076 - TJU_VIPLab - INFO - Epoch 34, [336/500] lr: 0.001000 time: 0.110 loss_l1: 0.292120 loss_ssim: 0.726082 loss_hsv: 0.109105 loss_perceptual: 1.002533 loss: 1.628574
+2022-04-23 13:49:57,735 - TJU_VIPLab - INFO - Epoch 34, [337/500] lr: 0.001000 time: 0.000 loss_l1: 0.380193 loss_ssim: 0.846415 loss_hsv: 0.122010 loss_perceptual: 0.728270 loss: 1.712753
+2022-04-23 13:49:58,382 - TJU_VIPLab - INFO - Epoch 34, [338/500] lr: 0.001000 time: 0.000 loss_l1: 0.387640 loss_ssim: 0.777363 loss_hsv: 0.176230 loss_perceptual: 0.932263 loss: 1.807364
+2022-04-23 13:49:59,032 - TJU_VIPLab - INFO - Epoch 34, [339/500] lr: 0.001000 time: 0.000 loss_l1: 0.417176 loss_ssim: 0.722377 loss_hsv: 0.146486 loss_perceptual: 0.721126 loss: 1.646602
+2022-04-23 13:49:59,682 - TJU_VIPLab - INFO - Epoch 34, [340/500] lr: 0.001000 time: 0.000 loss_l1: 0.323167 loss_ssim: 0.580918 loss_hsv: 0.105863 loss_perceptual: 0.547889 loss: 1.283893
+2022-04-23 13:50:00,192 - TJU_VIPLab - INFO - 
+Start Epoch 35 -----------
+2022-04-23 13:50:02,951 - TJU_VIPLab - INFO - Epoch 35, [341/500] lr: 0.001000 time: 2.390 loss_l1: 0.473932 loss_ssim: 0.791139 loss_hsv: 0.103768 loss_perceptual: 0.689065 loss: 1.713371
+2022-04-23 13:50:03,592 - TJU_VIPLab - INFO - Epoch 35, [342/500] lr: 0.001000 time: 0.000 loss_l1: 0.388713 loss_ssim: 0.761757 loss_hsv: 0.120560 loss_perceptual: 0.675765 loss: 1.608912
+2022-04-23 13:50:04,241 - TJU_VIPLab - INFO - Epoch 35, [343/500] lr: 0.001000 time: 0.000 loss_l1: 0.345893 loss_ssim: 0.835833 loss_hsv: 0.081606 loss_perceptual: 0.798855 loss: 1.662759
+2022-04-23 13:50:04,897 - TJU_VIPLab - INFO - Epoch 35, [344/500] lr: 0.001000 time: 0.000 loss_l1: 0.313387 loss_ssim: 0.724320 loss_hsv: 0.132858 loss_perceptual: 0.897308 loss: 1.619218
+2022-04-23 13:50:05,542 - TJU_VIPLab - INFO - Epoch 35, [345/500] lr: 0.001000 time: 0.000 loss_l1: 0.311338 loss_ssim: 0.701669 loss_hsv: 0.133284 loss_perceptual: 1.161030 loss: 1.726806
+2022-04-23 13:50:06,302 - TJU_VIPLab - INFO - Epoch 35, [346/500] lr: 0.001000 time: 0.110 loss_l1: 0.305642 loss_ssim: 0.758738 loss_hsv: 0.095724 loss_perceptual: 0.933152 loss: 1.626680
+2022-04-23 13:50:06,952 - TJU_VIPLab - INFO - Epoch 35, [347/500] lr: 0.001000 time: 0.002 loss_l1: 0.377727 loss_ssim: 0.856388 loss_hsv: 0.100414 loss_perceptual: 0.730397 loss: 1.699728
+2022-04-23 13:50:07,602 - TJU_VIPLab - INFO - Epoch 35, [348/500] lr: 0.001000 time: 0.000 loss_l1: 0.393738 loss_ssim: 0.834532 loss_hsv: 0.183200 loss_perceptual: 0.880322 loss: 1.851631
+2022-04-23 13:50:08,243 - TJU_VIPLab - INFO - Epoch 35, [349/500] lr: 0.001000 time: 0.000 loss_l1: 0.419288 loss_ssim: 0.826610 loss_hsv: 0.148255 loss_perceptual: 0.687361 loss: 1.737833
+2022-04-23 13:50:08,891 - TJU_VIPLab - INFO - Epoch 35, [350/500] lr: 0.001000 time: 0.000 loss_l1: 0.324025 loss_ssim: 0.643315 loss_hsv: 0.127596 loss_perceptual: 0.579836 loss: 1.384854
+2022-04-23 13:50:09,383 - TJU_VIPLab - INFO - 
+Start Epoch 36 -----------
+2022-04-23 13:50:12,032 - TJU_VIPLab - INFO - Epoch 36, [351/500] lr: 0.001000 time: 2.335 loss_l1: 0.399684 loss_ssim: 0.720793 loss_hsv: 0.087723 loss_perceptual: 0.746705 loss: 1.581553
+2022-04-23 13:50:12,682 - TJU_VIPLab - INFO - Epoch 36, [352/500] lr: 0.001000 time: 0.000 loss_l1: 0.410503 loss_ssim: 0.780877 loss_hsv: 0.126214 loss_perceptual: 0.795809 loss: 1.715499
+2022-04-23 13:50:13,332 - TJU_VIPLab - INFO - Epoch 36, [353/500] lr: 0.001000 time: 0.005 loss_l1: 0.335105 loss_ssim: 0.732903 loss_hsv: 0.073109 loss_perceptual: 0.885230 loss: 1.583732
+2022-04-23 13:50:13,971 - TJU_VIPLab - INFO - Epoch 36, [354/500] lr: 0.001000 time: 0.000 loss_l1: 0.324539 loss_ssim: 0.708781 loss_hsv: 0.130211 loss_perceptual: 0.918076 loss: 1.622568
+2022-04-23 13:50:14,621 - TJU_VIPLab - INFO - Epoch 36, [355/500] lr: 0.001000 time: 0.000 loss_l1: 0.345078 loss_ssim: 0.694873 loss_hsv: 0.146643 loss_perceptual: 1.032620 loss: 1.702904
+2022-04-23 13:50:15,402 - TJU_VIPLab - INFO - Epoch 36, [356/500] lr: 0.001000 time: 0.100 loss_l1: 0.304925 loss_ssim: 0.735878 loss_hsv: 0.107869 loss_perceptual: 0.898659 loss: 1.598002
+2022-04-23 13:50:16,042 - TJU_VIPLab - INFO - Epoch 36, [357/500] lr: 0.001000 time: 0.000 loss_l1: 0.420913 loss_ssim: 0.852106 loss_hsv: 0.109575 loss_perceptual: 0.736022 loss: 1.750605
+2022-04-23 13:50:16,712 - TJU_VIPLab - INFO - Epoch 36, [358/500] lr: 0.001000 time: 0.000 loss_l1: 0.396541 loss_ssim: 0.840379 loss_hsv: 0.185481 loss_perceptual: 0.893543 loss: 1.869172
+2022-04-23 13:50:17,363 - TJU_VIPLab - INFO - Epoch 36, [359/500] lr: 0.001000 time: 0.000 loss_l1: 0.407530 loss_ssim: 0.746824 loss_hsv: 0.159846 loss_perceptual: 0.636886 loss: 1.632642
+2022-04-23 13:50:18,022 - TJU_VIPLab - INFO - Epoch 36, [360/500] lr: 0.001000 time: 0.005 loss_l1: 0.344496 loss_ssim: 0.645159 loss_hsv: 0.116929 loss_perceptual: 0.545764 loss: 1.379466
+2022-04-23 13:50:18,491 - TJU_VIPLab - INFO - 
+Start Epoch 37 -----------
+2022-04-23 13:50:21,092 - TJU_VIPLab - INFO - Epoch 37, [361/500] lr: 0.001000 time: 2.303 loss_l1: 0.467723 loss_ssim: 0.772234 loss_hsv: 0.095954 loss_perceptual: 0.687268 loss: 1.679544
+2022-04-23 13:50:21,742 - TJU_VIPLab - INFO - Epoch 37, [362/500] lr: 0.001000 time: 0.000 loss_l1: 0.406036 loss_ssim: 0.777726 loss_hsv: 0.126514 loss_perceptual: 0.685673 loss: 1.653112
+2022-04-23 13:50:22,402 - TJU_VIPLab - INFO - Epoch 37, [363/500] lr: 0.001000 time: 0.000 loss_l1: 0.323891 loss_ssim: 0.703121 loss_hsv: 0.076212 loss_perceptual: 0.861066 loss: 1.533757
+2022-04-23 13:50:23,052 - TJU_VIPLab - INFO - Epoch 37, [364/500] lr: 0.001000 time: 0.000 loss_l1: 0.301964 loss_ssim: 0.694183 loss_hsv: 0.123044 loss_perceptual: 0.960732 loss: 1.599557
+2022-04-23 13:50:23,702 - TJU_VIPLab - INFO - Epoch 37, [365/500] lr: 0.001000 time: 0.000 loss_l1: 0.310316 loss_ssim: 0.669262 loss_hsv: 0.127914 loss_perceptual: 1.266002 loss: 1.740493
+2022-04-23 13:50:24,469 - TJU_VIPLab - INFO - Epoch 37, [366/500] lr: 0.001000 time: 0.114 loss_l1: 0.307281 loss_ssim: 0.725269 loss_hsv: 0.112766 loss_perceptual: 0.946166 loss: 1.618400
+2022-04-23 13:50:25,117 - TJU_VIPLab - INFO - Epoch 37, [367/500] lr: 0.001000 time: 0.000 loss_l1: 0.417187 loss_ssim: 0.883857 loss_hsv: 0.113624 loss_perceptual: 0.695621 loss: 1.762478
+2022-04-23 13:50:25,797 - TJU_VIPLab - INFO - Epoch 37, [368/500] lr: 0.001000 time: 0.000 loss_l1: 0.365689 loss_ssim: 0.737021 loss_hsv: 0.172888 loss_perceptual: 0.918986 loss: 1.735090
+2022-04-23 13:50:26,442 - TJU_VIPLab - INFO - Epoch 37, [369/500] lr: 0.001000 time: 0.000 loss_l1: 0.424067 loss_ssim: 0.741629 loss_hsv: 0.161120 loss_perceptual: 0.675877 loss: 1.664755
+2022-04-23 13:50:27,084 - TJU_VIPLab - INFO - Epoch 37, [370/500] lr: 0.001000 time: 0.000 loss_l1: 0.333670 loss_ssim: 0.607763 loss_hsv: 0.097704 loss_perceptual: 0.513374 loss: 1.295824
+2022-04-23 13:50:27,587 - TJU_VIPLab - INFO - 
+Start Epoch 38 -----------
+2022-04-23 13:50:30,202 - TJU_VIPLab - INFO - Epoch 38, [371/500] lr: 0.001000 time: 2.320 loss_l1: 0.451061 loss_ssim: 0.726884 loss_hsv: 0.100673 loss_perceptual: 0.690921 loss: 1.624079
+2022-04-23 13:50:30,857 - TJU_VIPLab - INFO - Epoch 38, [372/500] lr: 0.001000 time: 0.000 loss_l1: 0.392536 loss_ssim: 0.766207 loss_hsv: 0.120859 loss_perceptual: 0.637927 loss: 1.598565
+2022-04-23 13:50:31,502 - TJU_VIPLab - INFO - Epoch 38, [373/500] lr: 0.001000 time: 0.000 loss_l1: 0.370836 loss_ssim: 0.825273 loss_hsv: 0.096908 loss_perceptual: 0.730701 loss: 1.658368
+2022-04-23 13:50:32,152 - TJU_VIPLab - INFO - Epoch 38, [374/500] lr: 0.001000 time: 0.000 loss_l1: 0.303767 loss_ssim: 0.703240 loss_hsv: 0.126472 loss_perceptual: 0.899057 loss: 1.583007
+2022-04-23 13:50:32,802 - TJU_VIPLab - INFO - Epoch 38, [375/500] lr: 0.001000 time: 0.000 loss_l1: 0.303830 loss_ssim: 0.651664 loss_hsv: 0.128739 loss_perceptual: 1.166560 loss: 1.667513
+2022-04-23 13:50:33,581 - TJU_VIPLab - INFO - Epoch 38, [376/500] lr: 0.001000 time: 0.116 loss_l1: 0.308742 loss_ssim: 0.736654 loss_hsv: 0.113482 loss_perceptual: 0.879787 loss: 1.598771
+2022-04-23 13:50:34,238 - TJU_VIPLab - INFO - Epoch 38, [377/500] lr: 0.001000 time: 0.005 loss_l1: 0.451826 loss_ssim: 0.900046 loss_hsv: 0.102793 loss_perceptual: 0.676368 loss: 1.792849
+2022-04-23 13:50:34,892 - TJU_VIPLab - INFO - Epoch 38, [378/500] lr: 0.001000 time: 0.000 loss_l1: 0.380595 loss_ssim: 0.777860 loss_hsv: 0.177781 loss_perceptual: 0.850440 loss: 1.761456
+2022-04-23 13:50:35,546 - TJU_VIPLab - INFO - Epoch 38, [379/500] lr: 0.001000 time: 0.000 loss_l1: 0.397195 loss_ssim: 0.713371 loss_hsv: 0.142971 loss_perceptual: 0.636254 loss: 1.571664
+2022-04-23 13:50:36,201 - TJU_VIPLab - INFO - Epoch 38, [380/500] lr: 0.001000 time: 0.000 loss_l1: 0.332709 loss_ssim: 0.643097 loss_hsv: 0.109567 loss_perceptual: 0.524970 loss: 1.347858
+2022-04-23 13:50:36,681 - TJU_VIPLab - INFO - 
+Start Epoch 39 -----------
+2022-04-23 13:50:39,267 - TJU_VIPLab - INFO - Epoch 39, [381/500] lr: 0.001000 time: 2.295 loss_l1: 0.456656 loss_ssim: 0.741514 loss_hsv: 0.103512 loss_perceptual: 0.664590 loss: 1.633977
+2022-04-23 13:50:39,922 - TJU_VIPLab - INFO - Epoch 39, [382/500] lr: 0.001000 time: 0.000 loss_l1: 0.398288 loss_ssim: 0.760649 loss_hsv: 0.133089 loss_perceptual: 0.716350 loss: 1.650201
+2022-04-23 13:50:40,577 - TJU_VIPLab - INFO - Epoch 39, [383/500] lr: 0.001000 time: 0.000 loss_l1: 0.321074 loss_ssim: 0.702766 loss_hsv: 0.076905 loss_perceptual: 0.813708 loss: 1.507599
+2022-04-23 13:50:41,222 - TJU_VIPLab - INFO - Epoch 39, [384/500] lr: 0.001000 time: 0.005 loss_l1: 0.297461 loss_ssim: 0.657408 loss_hsv: 0.126172 loss_perceptual: 0.893183 loss: 1.527633
+2022-04-23 13:50:41,867 - TJU_VIPLab - INFO - Epoch 39, [385/500] lr: 0.001000 time: 0.000 loss_l1: 0.307440 loss_ssim: 0.668004 loss_hsv: 0.137056 loss_perceptual: 1.183832 loss: 1.704417
+2022-04-23 13:50:42,627 - TJU_VIPLab - INFO - Epoch 39, [386/500] lr: 0.001000 time: 0.110 loss_l1: 0.284964 loss_ssim: 0.702393 loss_hsv: 0.113416 loss_perceptual: 0.942040 loss: 1.571794
+2022-04-23 13:50:43,301 - TJU_VIPLab - INFO - Epoch 39, [387/500] lr: 0.001000 time: 0.005 loss_l1: 0.444849 loss_ssim: 0.858128 loss_hsv: 0.100346 loss_perceptual: 0.695324 loss: 1.750985
+2022-04-23 13:50:43,956 - TJU_VIPLab - INFO - Epoch 39, [388/500] lr: 0.001000 time: 0.000 loss_l1: 0.386746 loss_ssim: 0.821620 loss_hsv: 0.180812 loss_perceptual: 0.826118 loss: 1.802237
+2022-04-23 13:50:44,607 - TJU_VIPLab - INFO - Epoch 39, [389/500] lr: 0.001000 time: 0.000 loss_l1: 0.405709 loss_ssim: 0.731523 loss_hsv: 0.157028 loss_perceptual: 0.639273 loss: 1.613897
+2022-04-23 13:50:45,257 - TJU_VIPLab - INFO - Epoch 39, [390/500] lr: 0.001000 time: 0.000 loss_l1: 0.354799 loss_ssim: 0.675947 loss_hsv: 0.101331 loss_perceptual: 0.495209 loss: 1.379682
+2022-04-23 13:50:45,753 - TJU_VIPLab - INFO - 
+Start Epoch 40 -----------
+2022-04-23 13:50:48,394 - TJU_VIPLab - INFO - Epoch 40, [391/500] lr: 0.001000 time: 2.340 loss_l1: 0.456579 loss_ssim: 0.747856 loss_hsv: 0.092036 loss_perceptual: 0.681712 loss: 1.637327
+2022-04-23 13:50:49,042 - TJU_VIPLab - INFO - Epoch 40, [392/500] lr: 0.001000 time: 0.000 loss_l1: 0.386047 loss_ssim: 0.757080 loss_hsv: 0.125516 loss_perceptual: 0.652323 loss: 1.594804
+2022-04-23 13:50:49,692 - TJU_VIPLab - INFO - Epoch 40, [393/500] lr: 0.001000 time: 0.000 loss_l1: 0.324310 loss_ssim: 0.728376 loss_hsv: 0.074522 loss_perceptual: 0.765720 loss: 1.510068
+2022-04-23 13:50:50,352 - TJU_VIPLab - INFO - Epoch 40, [394/500] lr: 0.001000 time: 0.000 loss_l1: 0.307267 loss_ssim: 0.678168 loss_hsv: 0.129299 loss_perceptual: 0.864832 loss: 1.547150
+2022-04-23 13:50:50,992 - TJU_VIPLab - INFO - Epoch 40, [395/500] lr: 0.001000 time: 0.000 loss_l1: 0.298661 loss_ssim: 0.656951 loss_hsv: 0.131211 loss_perceptual: 1.153986 loss: 1.663817
+2022-04-23 13:50:51,763 - TJU_VIPLab - INFO - Epoch 40, [396/500] lr: 0.001000 time: 0.109 loss_l1: 0.287070 loss_ssim: 0.713584 loss_hsv: 0.111991 loss_perceptual: 0.957532 loss: 1.591411
+2022-04-23 13:50:52,424 - TJU_VIPLab - INFO - Epoch 40, [397/500] lr: 0.001000 time: 0.000 loss_l1: 0.365656 loss_ssim: 0.788523 loss_hsv: 0.112390 loss_perceptual: 0.775624 loss: 1.654381
+2022-04-23 13:50:53,072 - TJU_VIPLab - INFO - Epoch 40, [398/500] lr: 0.001000 time: 0.010 loss_l1: 0.355627 loss_ssim: 0.735447 loss_hsv: 0.171491 loss_perceptual: 0.859824 loss: 1.692476
+2022-04-23 13:50:53,731 - TJU_VIPLab - INFO - Epoch 40, [399/500] lr: 0.001000 time: 0.003 loss_l1: 0.391207 loss_ssim: 0.715739 loss_hsv: 0.145002 loss_perceptual: 0.642037 loss: 1.572968
+2022-04-23 13:50:54,382 - TJU_VIPLab - INFO - Epoch 40, [400/500] lr: 0.001000 time: 0.000 loss_l1: 0.337205 loss_ssim: 0.619179 loss_hsv: 0.110392 loss_perceptual: 0.555342 loss: 1.344447
+2022-04-23 13:50:54,902 - TJU_VIPLab - INFO - 
+Start Epoch 41 -----------
+2022-04-23 13:50:57,512 - TJU_VIPLab - INFO - Epoch 41, [401/500] lr: 0.001000 time: 2.335 loss_l1: 0.458892 loss_ssim: 0.734094 loss_hsv: 0.096408 loss_perceptual: 0.689519 loss: 1.634153
+2022-04-23 13:50:58,161 - TJU_VIPLab - INFO - Epoch 41, [402/500] lr: 0.001000 time: 0.005 loss_l1: 0.392271 loss_ssim: 0.759212 loss_hsv: 0.125163 loss_perceptual: 0.702378 loss: 1.627836
+2022-04-23 13:50:58,814 - TJU_VIPLab - INFO - Epoch 41, [403/500] lr: 0.001000 time: 0.000 loss_l1: 0.334665 loss_ssim: 0.730256 loss_hsv: 0.068883 loss_perceptual: 0.782501 loss: 1.525055
+2022-04-23 13:50:59,465 - TJU_VIPLab - INFO - Epoch 41, [404/500] lr: 0.001000 time: 0.000 loss_l1: 0.302103 loss_ssim: 0.672618 loss_hsv: 0.126613 loss_perceptual: 0.830961 loss: 1.516813
+2022-04-23 13:51:00,122 - TJU_VIPLab - INFO - Epoch 41, [405/500] lr: 0.001000 time: 0.000 loss_l1: 0.316021 loss_ssim: 0.674597 loss_hsv: 0.142167 loss_perceptual: 1.017577 loss: 1.641573
+2022-04-23 13:51:00,902 - TJU_VIPLab - INFO - Epoch 41, [406/500] lr: 0.001000 time: 0.118 loss_l1: 0.298320 loss_ssim: 0.730249 loss_hsv: 0.108023 loss_perceptual: 0.870727 loss: 1.571956
+2022-04-23 13:51:01,562 - TJU_VIPLab - INFO - Epoch 41, [407/500] lr: 0.001000 time: 0.000 loss_l1: 0.444994 loss_ssim: 0.901125 loss_hsv: 0.101180 loss_perceptual: 0.652936 loss: 1.773767
+2022-04-23 13:51:02,222 - TJU_VIPLab - INFO - Epoch 41, [408/500] lr: 0.001000 time: 0.000 loss_l1: 0.357318 loss_ssim: 0.757635 loss_hsv: 0.179912 loss_perceptual: 0.890433 loss: 1.740082
+2022-04-23 13:51:02,872 - TJU_VIPLab - INFO - Epoch 41, [409/500] lr: 0.001000 time: 0.006 loss_l1: 0.396341 loss_ssim: 0.747406 loss_hsv: 0.152262 loss_perceptual: 0.552391 loss: 1.572204
+2022-04-23 13:51:03,522 - TJU_VIPLab - INFO - Epoch 41, [410/500] lr: 0.001000 time: 0.000 loss_l1: 0.319087 loss_ssim: 0.597106 loss_hsv: 0.104607 loss_perceptual: 0.532866 loss: 1.287233
+2022-04-23 13:51:04,061 - TJU_VIPLab - INFO - 
+Start Epoch 42 -----------
+2022-04-23 13:51:07,641 - TJU_VIPLab - INFO - Epoch 42, [411/500] lr: 0.001000 time: 3.280 loss_l1: 0.463542 loss_ssim: 0.760509 loss_hsv: 0.094116 loss_perceptual: 0.653976 loss: 1.645154
+2022-04-23 13:51:08,316 - TJU_VIPLab - INFO - Epoch 42, [412/500] lr: 0.001000 time: 0.000 loss_l1: 0.381385 loss_ssim: 0.740857 loss_hsv: 0.124293 loss_perceptual: 0.748569 loss: 1.620821
+2022-04-23 13:51:08,974 - TJU_VIPLab - INFO - Epoch 42, [413/500] lr: 0.001000 time: 0.005 loss_l1: 0.318153 loss_ssim: 0.709970 loss_hsv: 0.067986 loss_perceptual: 0.810203 loss: 1.501210
+2022-04-23 13:51:09,622 - TJU_VIPLab - INFO - Epoch 42, [414/500] lr: 0.001000 time: 0.004 loss_l1: 0.317278 loss_ssim: 0.702342 loss_hsv: 0.127172 loss_perceptual: 0.924757 loss: 1.609169
+2022-04-23 13:51:10,308 - TJU_VIPLab - INFO - Epoch 42, [415/500] lr: 0.001000 time: 0.000 loss_l1: 0.321635 loss_ssim: 0.690855 loss_hsv: 0.137173 loss_perceptual: 1.139461 loss: 1.719393
+2022-04-23 13:51:11,062 - TJU_VIPLab - INFO - Epoch 42, [416/500] lr: 0.001000 time: 0.100 loss_l1: 0.294317 loss_ssim: 0.722897 loss_hsv: 0.096862 loss_perceptual: 0.965703 loss: 1.596929
+2022-04-23 13:51:11,722 - TJU_VIPLab - INFO - Epoch 42, [417/500] lr: 0.001000 time: 0.003 loss_l1: 0.362245 loss_ssim: 0.800101 loss_hsv: 0.120664 loss_perceptual: 0.761060 loss: 1.663539
+2022-04-23 13:51:12,372 - TJU_VIPLab - INFO - Epoch 42, [418/500] lr: 0.001000 time: 0.000 loss_l1: 0.392718 loss_ssim: 0.833893 loss_hsv: 0.181241 loss_perceptual: 0.804452 loss: 1.810078
+2022-04-23 13:51:13,022 - TJU_VIPLab - INFO - Epoch 42, [419/500] lr: 0.001000 time: 0.000 loss_l1: 0.390769 loss_ssim: 0.707491 loss_hsv: 0.151015 loss_perceptual: 0.604164 loss: 1.551357
+2022-04-23 13:51:13,682 - TJU_VIPLab - INFO - Epoch 42, [420/500] lr: 0.001000 time: 0.000 loss_l1: 0.292971 loss_ssim: 0.613418 loss_hsv: 0.116448 loss_perceptual: 0.571115 loss: 1.308394
+2022-04-23 13:51:14,166 - TJU_VIPLab - INFO - 
+Start Epoch 43 -----------
+2022-04-23 13:51:16,917 - TJU_VIPLab - INFO - Epoch 43, [421/500] lr: 0.001000 time: 2.340 loss_l1: 0.383472 loss_ssim: 0.732770 loss_hsv: 0.103728 loss_perceptual: 0.690310 loss: 1.565125
+2022-04-23 13:51:17,562 - TJU_VIPLab - INFO - Epoch 43, [422/500] lr: 0.001000 time: 0.000 loss_l1: 0.393596 loss_ssim: 0.768892 loss_hsv: 0.120408 loss_perceptual: 0.631457 loss: 1.598625
+2022-04-23 13:51:18,232 - TJU_VIPLab - INFO - Epoch 43, [423/500] lr: 0.001000 time: 0.000 loss_l1: 0.325476 loss_ssim: 0.742508 loss_hsv: 0.073621 loss_perceptual: 0.763470 loss: 1.523340
+2022-04-23 13:51:18,889 - TJU_VIPLab - INFO - Epoch 43, [424/500] lr: 0.001000 time: 0.000 loss_l1: 0.317558 loss_ssim: 0.709848 loss_hsv: 0.135873 loss_perceptual: 0.891318 loss: 1.608938
+2022-04-23 13:51:19,551 - TJU_VIPLab - INFO - Epoch 43, [425/500] lr: 0.001000 time: 0.002 loss_l1: 0.301736 loss_ssim: 0.652799 loss_hsv: 0.131369 loss_perceptual: 1.057246 loss: 1.614527
+2022-04-23 13:51:20,347 - TJU_VIPLab - INFO - Epoch 43, [426/500] lr: 0.001000 time: 0.125 loss_l1: 0.294847 loss_ssim: 0.730456 loss_hsv: 0.104627 loss_perceptual: 0.907821 loss: 1.583839
+2022-04-23 13:51:21,147 - TJU_VIPLab - INFO - Epoch 43, [427/500] lr: 0.001000 time: 0.000 loss_l1: 0.414901 loss_ssim: 0.796452 loss_hsv: 0.117633 loss_perceptual: 0.756886 loss: 1.707430
+2022-04-23 13:51:21,952 - TJU_VIPLab - INFO - Epoch 43, [428/500] lr: 0.001000 time: 0.000 loss_l1: 0.375757 loss_ssim: 0.780822 loss_hsv: 0.174811 loss_perceptual: 0.889810 loss: 1.776295
+2022-04-23 13:51:22,616 - TJU_VIPLab - INFO - Epoch 43, [429/500] lr: 0.001000 time: 0.000 loss_l1: 0.407602 loss_ssim: 0.714528 loss_hsv: 0.138722 loss_perceptual: 0.680435 loss: 1.601070
+2022-04-23 13:51:23,373 - TJU_VIPLab - INFO - Epoch 43, [430/500] lr: 0.001000 time: 0.002 loss_l1: 0.324984 loss_ssim: 0.615989 loss_hsv: 0.114309 loss_perceptual: 0.597321 loss: 1.353942
+2022-04-23 13:51:23,962 - TJU_VIPLab - INFO - 
+Start Epoch 44 -----------
+2022-04-23 13:51:27,673 - TJU_VIPLab - INFO - Epoch 44, [431/500] lr: 0.001000 time: 3.389 loss_l1: 0.354325 loss_ssim: 0.711896 loss_hsv: 0.083500 loss_perceptual: 0.658272 loss: 1.478858
+2022-04-23 13:51:28,322 - TJU_VIPLab - INFO - Epoch 44, [432/500] lr: 0.001000 time: 0.000 loss_l1: 0.384173 loss_ssim: 0.745613 loss_hsv: 0.126918 loss_perceptual: 0.657284 loss: 1.585345
+2022-04-23 13:51:28,974 - TJU_VIPLab - INFO - Epoch 44, [433/500] lr: 0.001000 time: 0.000 loss_l1: 0.307408 loss_ssim: 0.693590 loss_hsv: 0.065584 loss_perceptual: 0.751524 loss: 1.442345
+2022-04-23 13:51:29,642 - TJU_VIPLab - INFO - Epoch 44, [434/500] lr: 0.001000 time: 0.000 loss_l1: 0.293383 loss_ssim: 0.672553 loss_hsv: 0.136098 loss_perceptual: 0.849425 loss: 1.526746
+2022-04-23 13:51:30,327 - TJU_VIPLab - INFO - Epoch 44, [435/500] lr: 0.001000 time: 0.000 loss_l1: 0.297254 loss_ssim: 0.668278 loss_hsv: 0.133466 loss_perceptual: 1.057533 loss: 1.627764
+2022-04-23 13:51:31,125 - TJU_VIPLab - INFO - Epoch 44, [436/500] lr: 0.001000 time: 0.142 loss_l1: 0.289849 loss_ssim: 0.712080 loss_hsv: 0.113716 loss_perceptual: 0.971699 loss: 1.601495
+2022-04-23 13:51:31,822 - TJU_VIPLab - INFO - Epoch 44, [437/500] lr: 0.001000 time: 0.000 loss_l1: 0.333022 loss_ssim: 0.734679 loss_hsv: 0.116043 loss_perceptual: 0.807376 loss: 1.587432
+2022-04-23 13:51:32,485 - TJU_VIPLab - INFO - Epoch 44, [438/500] lr: 0.001000 time: 0.000 loss_l1: 0.382932 loss_ssim: 0.766019 loss_hsv: 0.173727 loss_perceptual: 0.851158 loss: 1.748257
+2022-04-23 13:51:33,152 - TJU_VIPLab - INFO - Epoch 44, [439/500] lr: 0.001000 time: 0.003 loss_l1: 0.387648 loss_ssim: 0.717183 loss_hsv: 0.147547 loss_perceptual: 0.611585 loss: 1.558171
+2022-04-23 13:51:33,819 - TJU_VIPLab - INFO - Epoch 44, [440/500] lr: 0.001000 time: 0.000 loss_l1: 0.312924 loss_ssim: 0.607105 loss_hsv: 0.104693 loss_perceptual: 0.471523 loss: 1.260484
+2022-04-23 13:51:34,316 - TJU_VIPLab - INFO - 
+Start Epoch 45 -----------
+2022-04-23 13:51:36,947 - TJU_VIPLab - INFO - Epoch 45, [441/500] lr: 0.001000 time: 2.350 loss_l1: 0.384254 loss_ssim: 0.699449 loss_hsv: 0.084145 loss_perceptual: 0.681080 loss: 1.508388
+2022-04-23 13:51:37,597 - TJU_VIPLab - INFO - Epoch 45, [442/500] lr: 0.001000 time: 0.000 loss_l1: 0.422658 loss_ssim: 0.795098 loss_hsv: 0.136814 loss_perceptual: 0.681347 loss: 1.695243
+2022-04-23 13:51:38,262 - TJU_VIPLab - INFO - Epoch 45, [443/500] lr: 0.001000 time: 0.000 loss_l1: 0.330746 loss_ssim: 0.704828 loss_hsv: 0.076539 loss_perceptual: 0.732559 loss: 1.478393
+2022-04-23 13:51:38,912 - TJU_VIPLab - INFO - Epoch 45, [444/500] lr: 0.001000 time: 0.000 loss_l1: 0.295642 loss_ssim: 0.656797 loss_hsv: 0.126027 loss_perceptual: 0.846381 loss: 1.501657
+2022-04-23 13:51:39,567 - TJU_VIPLab - INFO - Epoch 45, [445/500] lr: 0.001000 time: 0.000 loss_l1: 0.305122 loss_ssim: 0.665137 loss_hsv: 0.133745 loss_perceptual: 1.134139 loss: 1.671073
+2022-04-23 13:51:40,331 - TJU_VIPLab - INFO - Epoch 45, [446/500] lr: 0.001000 time: 0.115 loss_l1: 0.298610 loss_ssim: 0.725282 loss_hsv: 0.112569 loss_perceptual: 0.918185 loss: 1.595554
+2022-04-23 13:51:40,982 - TJU_VIPLab - INFO - Epoch 45, [447/500] lr: 0.001000 time: 0.000 loss_l1: 0.382636 loss_ssim: 0.840293 loss_hsv: 0.109521 loss_perceptual: 0.693036 loss: 1.678968
+2022-04-23 13:51:41,637 - TJU_VIPLab - INFO - Epoch 45, [448/500] lr: 0.001000 time: 0.000 loss_l1: 0.395839 loss_ssim: 0.831867 loss_hsv: 0.181570 loss_perceptual: 0.768651 loss: 1.793601
+2022-04-23 13:51:42,312 - TJU_VIPLab - INFO - Epoch 45, [449/500] lr: 0.001000 time: 0.000 loss_l1: 0.392965 loss_ssim: 0.711544 loss_hsv: 0.149120 loss_perceptual: 0.651083 loss: 1.579171
+2022-04-23 13:51:42,967 - TJU_VIPLab - INFO - Epoch 45, [450/500] lr: 0.001000 time: 0.000 loss_l1: 0.345262 loss_ssim: 0.643487 loss_hsv: 0.107666 loss_perceptual: 0.511884 loss: 1.352357
+2022-04-23 13:51:43,482 - TJU_VIPLab - INFO - 
+Start Epoch 46 -----------
+2022-04-23 13:51:46,162 - TJU_VIPLab - INFO - Epoch 46, [451/500] lr: 0.001000 time: 2.366 loss_l1: 0.396162 loss_ssim: 0.708840 loss_hsv: 0.076484 loss_perceptual: 0.651031 loss: 1.507001
+2022-04-23 13:51:46,827 - TJU_VIPLab - INFO - Epoch 46, [452/500] lr: 0.001000 time: 0.000 loss_l1: 0.401108 loss_ssim: 0.766213 loss_hsv: 0.127810 loss_perceptual: 0.684617 loss: 1.637440
+2022-04-23 13:51:47,482 - TJU_VIPLab - INFO - Epoch 46, [453/500] lr: 0.001000 time: 0.000 loss_l1: 0.329275 loss_ssim: 0.745026 loss_hsv: 0.066349 loss_perceptual: 0.740697 loss: 1.510998
+2022-04-23 13:51:48,147 - TJU_VIPLab - INFO - Epoch 46, [454/500] lr: 0.001000 time: 0.000 loss_l1: 0.291042 loss_ssim: 0.666869 loss_hsv: 0.119879 loss_perceptual: 0.855974 loss: 1.505777
+2022-04-23 13:51:48,827 - TJU_VIPLab - INFO - Epoch 46, [455/500] lr: 0.001000 time: 0.000 loss_l1: 0.354888 loss_ssim: 0.695732 loss_hsv: 0.151063 loss_perceptual: 1.048250 loss: 1.725808
+2022-04-23 13:51:49,582 - TJU_VIPLab - INFO - Epoch 46, [456/500] lr: 0.001000 time: 0.110 loss_l1: 0.295426 loss_ssim: 0.711367 loss_hsv: 0.116416 loss_perceptual: 0.890914 loss: 1.568666
+2022-04-23 13:51:50,242 - TJU_VIPLab - INFO - Epoch 46, [457/500] lr: 0.001000 time: 0.000 loss_l1: 0.469500 loss_ssim: 0.920416 loss_hsv: 0.096715 loss_perceptual: 0.617164 loss: 1.795213
+2022-04-23 13:51:50,896 - TJU_VIPLab - INFO - Epoch 46, [458/500] lr: 0.001000 time: 0.000 loss_l1: 0.382303 loss_ssim: 0.791170 loss_hsv: 0.183483 loss_perceptual: 0.803405 loss: 1.758659
+2022-04-23 13:51:51,542 - TJU_VIPLab - INFO - Epoch 46, [459/500] lr: 0.001000 time: 0.002 loss_l1: 0.384616 loss_ssim: 0.683296 loss_hsv: 0.154694 loss_perceptual: 0.587344 loss: 1.516278
+2022-04-23 13:51:52,207 - TJU_VIPLab - INFO - Epoch 46, [460/500] lr: 0.001000 time: 0.000 loss_l1: 0.336615 loss_ssim: 0.585281 loss_hsv: 0.106456 loss_perceptual: 0.501719 loss: 1.279212
+2022-04-23 13:51:52,700 - TJU_VIPLab - INFO - 
+Start Epoch 47 -----------
+2022-04-23 13:51:55,392 - TJU_VIPLab - INFO - Epoch 47, [461/500] lr: 0.001000 time: 2.360 loss_l1: 0.404406 loss_ssim: 0.715625 loss_hsv: 0.104225 loss_perceptual: 0.673125 loss: 1.560818
+2022-04-23 13:51:56,057 - TJU_VIPLab - INFO - Epoch 47, [462/500] lr: 0.001000 time: 0.000 loss_l1: 0.380004 loss_ssim: 0.751382 loss_hsv: 0.120535 loss_perceptual: 0.720347 loss: 1.612094
+2022-04-23 13:51:56,717 - TJU_VIPLab - INFO - Epoch 47, [463/500] lr: 0.001000 time: 0.000 loss_l1: 0.317322 loss_ssim: 0.678419 loss_hsv: 0.071651 loss_perceptual: 0.805041 loss: 1.469912
+2022-04-23 13:51:57,382 - TJU_VIPLab - INFO - Epoch 47, [464/500] lr: 0.001000 time: 0.003 loss_l1: 0.304636 loss_ssim: 0.651338 loss_hsv: 0.122475 loss_perceptual: 0.896635 loss: 1.526766
+2022-04-23 13:51:58,042 - TJU_VIPLab - INFO - Epoch 47, [465/500] lr: 0.001000 time: 0.010 loss_l1: 0.303445 loss_ssim: 0.662972 loss_hsv: 0.124432 loss_perceptual: 1.091772 loss: 1.636735
+2022-04-23 13:51:58,827 - TJU_VIPLab - INFO - Epoch 47, [466/500] lr: 0.001000 time: 0.126 loss_l1: 0.293308 loss_ssim: 0.728734 loss_hsv: 0.094990 loss_perceptual: 0.886094 loss: 1.560079
+2022-04-23 13:51:59,476 - TJU_VIPLab - INFO - Epoch 47, [467/500] lr: 0.001000 time: 0.000 loss_l1: 0.380871 loss_ssim: 0.750481 loss_hsv: 0.106133 loss_perceptual: 0.704348 loss: 1.589659
+2022-04-23 13:52:00,132 - TJU_VIPLab - INFO - Epoch 47, [468/500] lr: 0.001000 time: 0.000 loss_l1: 0.373856 loss_ssim: 0.801352 loss_hsv: 0.177534 loss_perceptual: 0.794124 loss: 1.749804
+2022-04-23 13:52:00,801 - TJU_VIPLab - INFO - Epoch 47, [469/500] lr: 0.001000 time: 0.000 loss_l1: 0.431492 loss_ssim: 0.753768 loss_hsv: 0.154759 loss_perceptual: 0.624614 loss: 1.652327
+2022-04-23 13:52:01,462 - TJU_VIPLab - INFO - Epoch 47, [470/500] lr: 0.001000 time: 0.000 loss_l1: 0.314170 loss_ssim: 0.635555 loss_hsv: 0.126220 loss_perceptual: 0.510355 loss: 1.331122
+2022-04-23 13:52:01,972 - TJU_VIPLab - INFO - 
+Start Epoch 48 -----------
+2022-04-23 13:52:04,672 - TJU_VIPLab - INFO - Epoch 48, [471/500] lr: 0.001000 time: 2.370 loss_l1: 0.360602 loss_ssim: 0.732070 loss_hsv: 0.084118 loss_perceptual: 0.614076 loss: 1.483828
+2022-04-23 13:52:05,327 - TJU_VIPLab - INFO - Epoch 48, [472/500] lr: 0.001000 time: 0.000 loss_l1: 0.397371 loss_ssim: 0.758245 loss_hsv: 0.129608 loss_perceptual: 0.617251 loss: 1.593850
+2022-04-23 13:52:05,986 - TJU_VIPLab - INFO - Epoch 48, [473/500] lr: 0.001000 time: 0.000 loss_l1: 0.326046 loss_ssim: 0.733643 loss_hsv: 0.082261 loss_perceptual: 0.674662 loss: 1.479281
+2022-04-23 13:52:06,645 - TJU_VIPLab - INFO - Epoch 48, [474/500] lr: 0.001000 time: 0.000 loss_l1: 0.289770 loss_ssim: 0.656852 loss_hsv: 0.128536 loss_perceptual: 0.878609 loss: 1.514462
+2022-04-23 13:52:07,321 - TJU_VIPLab - INFO - Epoch 48, [475/500] lr: 0.001000 time: 0.000 loss_l1: 0.315709 loss_ssim: 0.670527 loss_hsv: 0.145602 loss_perceptual: 1.080435 loss: 1.672055
+2022-04-23 13:52:08,097 - TJU_VIPLab - INFO - Epoch 48, [476/500] lr: 0.001000 time: 0.115 loss_l1: 0.305507 loss_ssim: 0.721562 loss_hsv: 0.113116 loss_perceptual: 0.891860 loss: 1.586115
+2022-04-23 13:52:08,752 - TJU_VIPLab - INFO - Epoch 48, [477/500] lr: 0.001000 time: 0.000 loss_l1: 0.423214 loss_ssim: 0.833186 loss_hsv: 0.109372 loss_perceptual: 0.734687 loss: 1.733115
+2022-04-23 13:52:09,405 - TJU_VIPLab - INFO - Epoch 48, [478/500] lr: 0.001000 time: 0.002 loss_l1: 0.370631 loss_ssim: 0.765057 loss_hsv: 0.169155 loss_perceptual: 0.792279 loss: 1.700983
+2022-04-23 13:52:10,071 - TJU_VIPLab - INFO - Epoch 48, [479/500] lr: 0.001000 time: 0.000 loss_l1: 0.395759 loss_ssim: 0.708338 loss_hsv: 0.147410 loss_perceptual: 0.587538 loss: 1.545275
+2022-04-23 13:52:10,732 - TJU_VIPLab - INFO - Epoch 48, [480/500] lr: 0.001000 time: 0.000 loss_l1: 0.295464 loss_ssim: 0.543399 loss_hsv: 0.129762 loss_perceptual: 0.529039 loss: 1.233145
+2022-04-23 13:52:11,217 - TJU_VIPLab - INFO - 
+Start Epoch 49 -----------
+2022-04-23 13:52:13,892 - TJU_VIPLab - INFO - Epoch 49, [481/500] lr: 0.001000 time: 2.350 loss_l1: 0.448502 loss_ssim: 0.719506 loss_hsv: 0.095186 loss_perceptual: 0.635267 loss: 1.580828
+2022-04-23 13:52:14,552 - TJU_VIPLab - INFO - Epoch 49, [482/500] lr: 0.001000 time: 0.000 loss_l1: 0.394843 loss_ssim: 0.773186 loss_hsv: 0.129809 loss_perceptual: 0.668409 loss: 1.632042
+2022-04-23 13:52:15,212 - TJU_VIPLab - INFO - Epoch 49, [483/500] lr: 0.001000 time: 0.000 loss_l1: 0.320215 loss_ssim: 0.683215 loss_hsv: 0.075273 loss_perceptual: 0.762800 loss: 1.460102
+2022-04-23 13:52:15,877 - TJU_VIPLab - INFO - Epoch 49, [484/500] lr: 0.001000 time: 0.005 loss_l1: 0.309066 loss_ssim: 0.664819 loss_hsv: 0.133864 loss_perceptual: 0.831156 loss: 1.523327
+2022-04-23 13:52:16,532 - TJU_VIPLab - INFO - Epoch 49, [485/500] lr: 0.001000 time: 0.000 loss_l1: 0.329621 loss_ssim: 0.668786 loss_hsv: 0.159360 loss_perceptual: 0.980410 loss: 1.647971
+2022-04-23 13:52:17,327 - TJU_VIPLab - INFO - Epoch 49, [486/500] lr: 0.001000 time: 0.140 loss_l1: 0.295054 loss_ssim: 0.734650 loss_hsv: 0.101320 loss_perceptual: 0.930214 loss: 1.596131
+2022-04-23 13:52:17,982 - TJU_VIPLab - INFO - Epoch 49, [487/500] lr: 0.001000 time: 0.000 loss_l1: 0.417425 loss_ssim: 0.776670 loss_hsv: 0.093331 loss_perceptual: 0.707973 loss: 1.641412
+2022-04-23 13:52:18,637 - TJU_VIPLab - INFO - Epoch 49, [488/500] lr: 0.001000 time: 0.000 loss_l1: 0.380833 loss_ssim: 0.794737 loss_hsv: 0.183498 loss_perceptual: 0.841100 loss: 1.779618
+2022-04-23 13:52:19,316 - TJU_VIPLab - INFO - Epoch 49, [489/500] lr: 0.001000 time: 0.005 loss_l1: 0.398132 loss_ssim: 0.694565 loss_hsv: 0.157974 loss_perceptual: 0.598212 loss: 1.549776
+2022-04-23 13:52:19,977 - TJU_VIPLab - INFO - Epoch 49, [490/500] lr: 0.001000 time: 0.000 loss_l1: 0.300019 loss_ssim: 0.585285 loss_hsv: 0.126748 loss_perceptual: 0.511668 loss: 1.267886
+2022-04-23 13:52:20,502 - TJU_VIPLab - INFO - 
+Start Epoch 50 -----------
+2022-04-23 13:52:23,251 - TJU_VIPLab - INFO - Epoch 50, [491/500] lr: 0.001000 time: 2.480 loss_l1: 0.459704 loss_ssim: 0.768198 loss_hsv: 0.094176 loss_perceptual: 0.618289 loss: 1.631222
+2022-04-23 13:52:23,907 - TJU_VIPLab - INFO - Epoch 50, [492/500] lr: 0.001000 time: 0.000 loss_l1: 0.431711 loss_ssim: 0.803434 loss_hsv: 0.140361 loss_perceptual: 0.726860 loss: 1.738936
+2022-04-23 13:52:24,561 - TJU_VIPLab - INFO - Epoch 50, [493/500] lr: 0.001000 time: 0.000 loss_l1: 0.329600 loss_ssim: 0.720795 loss_hsv: 0.067700 loss_perceptual: 0.768661 loss: 1.502426
+2022-04-23 13:52:25,212 - TJU_VIPLab - INFO - Epoch 50, [494/500] lr: 0.001000 time: 0.000 loss_l1: 0.306523 loss_ssim: 0.663983 loss_hsv: 0.128151 loss_perceptual: 0.836467 loss: 1.516891
+2022-04-23 13:52:25,887 - TJU_VIPLab - INFO - Epoch 50, [495/500] lr: 0.001000 time: 0.000 loss_l1: 0.336178 loss_ssim: 0.681135 loss_hsv: 0.141498 loss_perceptual: 1.026144 loss: 1.671884
+2022-04-23 13:52:26,662 - TJU_VIPLab - INFO - Epoch 50, [496/500] lr: 0.001000 time: 0.110 loss_l1: 0.288567 loss_ssim: 0.719640 loss_hsv: 0.105672 loss_perceptual: 0.893528 loss: 1.560643
+2022-04-23 13:52:27,332 - TJU_VIPLab - INFO - Epoch 50, [497/500] lr: 0.001000 time: 0.000 loss_l1: 0.370598 loss_ssim: 0.752422 loss_hsv: 0.101596 loss_perceptual: 0.704917 loss: 1.577075
+2022-04-23 13:52:27,987 - TJU_VIPLab - INFO - Epoch 50, [498/500] lr: 0.001000 time: 0.000 loss_l1: 0.371780 loss_ssim: 0.779411 loss_hsv: 0.173056 loss_perceptual: 0.825324 loss: 1.736908
+2022-04-23 13:52:28,652 - TJU_VIPLab - INFO - Epoch 50, [499/500] lr: 0.001000 time: 0.005 loss_l1: 0.396330 loss_ssim: 0.720639 loss_hsv: 0.148062 loss_perceptual: 0.545361 loss: 1.537711
+2022-04-23 13:52:29,312 - TJU_VIPLab - INFO - Epoch 50, [500/500] lr: 0.001000 time: 0.000 loss_l1: 0.315889 loss_ssim: 0.578806 loss_hsv: 0.110899 loss_perceptual: 0.462595 loss: 1.236891
+2022-04-23 13:52:29,862 - TJU_VIPLab - INFO - Finish Training

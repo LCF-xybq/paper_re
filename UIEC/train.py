@@ -1,3 +1,4 @@
+import collections
 import os
 import json
 import sys
@@ -16,11 +17,12 @@ from utils.trans import (Resize, RandomFlip, RandomCrop,
                          ToTensor, Normalize)
 from utils.Visualizer import Visualizer
 from utils.logger import get_root_logger
+from utils.save_image import normimage
+from utils.checkpoint import resume, load, save_latest, save_epoch
 from loss.ssim_loss import SSIMLoss
 from loss.hsv_loss import HSVLoss
 from uiec_dataset import UIECData
 from uiec_model import UIEC
-from utils.checkpoint import resume, load, save_latest, save_epoch
 from vgg import Vgg19
 
 
@@ -101,7 +103,6 @@ def train(args):
 
     ite_num = 0
     max_ite_num = args.epochs * len(train_loader)
-    running_loss = 0.0
 
     # False without Normalize in
     save_cfg = True
@@ -110,11 +111,18 @@ def train(args):
     t = time.time()
     model.train()
     for epoch in range(args.epochs):
+        if epoch < 20:
+            mamu_pixel = 0.5
+            mamu_whole = 0.5
+        else:
+            mamu_pixel = 0.1
+            mamu_whole = 0.9
+        mamuda = mamu_whole + mamu_pixel
         logger.info('\nStart Epoch %d -----------', epoch + 1)
         for i, data in enumerate(train_loader):
-            data_time = time.time() - t
+            date_time = time.time() - t
             ite_num = ite_num + 1
-            ite_num1val = ite_num * args.samples_per_gpu
+            ite_num5val = ite_num * args.samples_per_gpu
 
             lr, gt = data['lr'], data['gt']
             lr = lr.to(device)
@@ -126,15 +134,54 @@ def train(args):
 
             optimizer.zero_grad()
 
-            loss_ssim = SSIMLoss(output, gt)
+            loss_ssim = ssim_loss(output, gt)
             loss_l1 = l1_loss(output, gt)
             loss_per = mse_loss(feature_out.relu4_3, feature_gt.relu4_3)
             loss_hsv = hsv_loss(output, gt)
 
-            if epoch < 20:
-                
-            else:
+            loss = mamuda * (args.l1_weight * loss_l1 + args.ssim_weight * loss_ssim) + \
+                    args.hsv_weight * loss_hsv + args.perc_weight * loss_per
 
+            loss.backward()
+            optimizer.step()
+
+            logger.info('Epoch %d, [%d/%d] lr: %f time: %.3f loss_l1: %f '
+                        'loss_ssim: %f loss_hsv: %f loss_perceptual: %f loss: %f',
+                        epoch + 1, ite_num, max_ite_num, optimizer.param_groups[0]['lr'],
+                        date_time, loss_l1, loss_ssim, loss_hsv, loss_per, loss)
+
+            all_loss = collections.OrderedDict()
+            all_loss['loss_l1'] = loss_l1.data.cpu()
+            all_loss['loss_ssim'] = loss_ssim.data.cpu()
+            all_loss['loss_hsv'] = loss_hsv.data.cpu()
+            all_loss['loss_per'] = loss_per.data.cpu()
+            all_loss['total_loss'] = loss.data.cpu()
+            visualizer.plot_current_losses(epoch + 1, float(i) / len(train_loader), all_loss)
+
+            # after this iteration
+            t = time.time()
+            if ite_num5val % 5 == 0:
+                input_show = normimage(lr, save_cfg=save_cfg)
+                gt_show = normimage(gt, save_cfg=save_cfg)
+                out_show = normimage(output, save_cfg=save_cfg)
+
+                show = []
+                show.append(input_show.transpose([2, 0, 1]))
+                show.append(gt_show.transpose([2, 0, 1]))
+                show.append(out_show.transpose([2, 0, 1]))
+                vis.images(show, nrow=4, padding=3, win=1, opts=dict(title='Output images'))
+                ite_num5val = 0
+
+            if ite_num % 10 == 0:
+                save_latest(model, optimizer, args.ckpt, epoch, ite_num)
+                model.train()
+
+        if epoch % 10 == 0:
+            save_epoch(model, optimizer, args.save_pth, epoch, ite_num)
+            model.train()
+
+    save_epoch(model, optimizer, args.save_pth, args.epochs, ite_num)
+    logger.info('Finish Training')
 
 def test(args):
     pass
