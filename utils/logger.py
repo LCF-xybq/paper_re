@@ -16,7 +16,7 @@ def get_root_logger(log_file=None, log_level=logging.INFO):
     Returns:
         :obj:`logging.Logger`: The obtained logger
     """
-    logger = get_logger(name='TJU_VIPLab', log_file=log_file, log_level=log_level)
+    logger = get_logger(name='Handler One', log_file=log_file, log_level=log_level)
 
     return logger
 
