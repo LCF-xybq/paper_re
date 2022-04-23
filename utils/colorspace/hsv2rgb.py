@@ -2,7 +2,6 @@ import torch
 import torch.nn as nn
 
 """
-paper: DIFAR: Deep Image Formation and Retouching
 
 R = V - ((S*V)/60)delta(360h - 60) + ((S*V)/60)delta(360h - 240)
 G = V(1 - S) - ((S*V)/60)delta(360h - 60) + ((S*V)/60)delta(360h - 180)
