@@ -33,7 +33,7 @@ if __name__ == '__main__':
         raise ValueError('didi')
 
     out_img = out_numpy.astype(np.uint8)
-    fig, ax = plt.subplots(1, 2)
+    fig, ax = plt.subplots(1, 2, figsize=(10, 10))
     ax[0].imshow(img)
     ax[1].imshow(out_img)
     plt.show()

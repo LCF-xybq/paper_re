@@ -337,6 +337,12 @@ class CURLNet(nn.Module):
         super(CURLNet, self).__init__()
         self.tednet = TEDModle()
         self.curllayer = CURLLayer()
+        self.init_weight()
+
+    def init_weight(self):
+        for m in self.modules():
+            if isinstance(m, nn.Conv2d):
+                nn.init.xavier_normal_(m.weight)
 
     def forward(self, x):
         feat = self.tednet(x)
