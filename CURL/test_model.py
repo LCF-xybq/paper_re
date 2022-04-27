@@ -4,6 +4,8 @@ import matplotlib.pyplot as plt
 from PIL import Image
 from torchvision import transforms
 from model import CURLNet
+from utils.metric import psnr, ssim
+from utils.save_image import tensor2img
 
 if __name__ == '__main__':
     pth = r'D:\Program_self\paper_re\data\UW\train\raw\16_img_.png'
@@ -11,8 +13,8 @@ if __name__ == '__main__':
 
     model = CURLNet().cuda()
 
-    num_ele = [p.numel() for p in model.parameters()]
-    print(sum(num_ele))
+    # num_ele = [p.numel() for p in model.parameters()]
+    # print(sum(num_ele))
 
     trans = transforms.Compose([
         transforms.Resize(256),
@@ -25,15 +27,25 @@ if __name__ == '__main__':
 
     output,_ = model(img_tensor_batch)
 
-    out_numpy = output[0].cpu().detach().numpy()
+    ref_pth = r'D:\Program_self\paper_re\data\UW\train\ref\16_img_.png'
+    gt = Image.open(ref_pth).convert("RGB")
+    ref_trans = transforms.Compose([
+        transforms.Resize(256),
+        transforms.CenterCrop(224),
+        transforms.ToTensor()
+    ])
 
-    if out_numpy.shape[0] == 3:
-        out_numpy = (np.transpose(out_numpy, (1, 2, 0))) * 255.0
-    else:
-        raise ValueError('didi')
+    gt_re = trans(gt)
 
-    out_img = out_numpy.astype(np.uint8)
+    out = tensor2img(output, min_max=(-1, 1))
+    ref = tensor2img(gt_re, min_max=(-1, 1))
+
     fig, ax = plt.subplots(1, 2, figsize=(10, 10))
-    ax[0].imshow(img)
-    ax[1].imshow(out_img)
+    ax[0].imshow(out)
+    ax[1].imshow(ref)
     plt.show()
+
+    v1 = psnr(out, ref)
+    v2 = ssim(out, ref)
+
+    print(v1, v2)
