@@ -4,6 +4,7 @@ import torch
 import sys
 
 from PIL import Image
+from skimage.metrics import structural_similarity as ssim
 
 np.set_printoptions(threshold=sys.maxsize)
 
@@ -426,3 +427,37 @@ class ImageProcessing(object):
         img = img.contiguous()
 
         return img, slope_sqr_diff
+
+    @staticmethod
+    def compute_mse(original, result):
+        return ((original - result) ** 2).mean()
+
+    @staticmethod
+    def compute_psnr(image_batchA, image_batchB, max_intensity):
+        num_images = image_batchA.shape[0]
+        psnr_val = 0.0
+
+        for i in range(0, num_images):
+            imageA = image_batchA[i, 0:3, :, :]
+            imageB = image_batchB[i, 0:3, :, :]
+            imageB = np.maximum(0, np.minimum(imageB, max_intensity))
+            psnr_val += 10 * \
+                        np.log10(max_intensity ** 2 /
+                                 ImageProcessing.compute_mse(imageA, imageB))
+
+        return psnr_val / num_images
+
+    @staticmethod
+    def compute_ssim(image_batchA, image_batchB):
+        num_images = image_batchA.shape[0]
+        ssim_val = 0.0
+
+        for i in range(0, num_images):
+            imageA = ImageProcessing.swapimdims_3HW_HW3(
+                image_batchA[i, 0:3, :, :])
+            imageB = ImageProcessing.swapimdims_3HW_HW3(
+                image_batchB[i, 0:3, :, :])
+            ssim_val += ssim(imageA, imageB, data_range=imageA.max() - imageA.min(), multichannel=True,
+                             gaussian_weights=True, win_size=11)
+
+        return ssim_val / num_images
