@@ -6,5 +6,6 @@
   "save_pth": "D:\\Program_self\\paper_re\\saved_model\\CURL\\",
   "inference_img": null,
   "ann_file": "D:\\Program_self\\paper_re\\data\\UW\\ann.txt",
-  "work_dir": "D:\\Program_self\\paper_re\\ckpt\\CURL\\log\\"
+  "work_dir": "D:\\Program_self\\paper_re\\ckpt\\CURL\\log\\",
+  "log_level": "INFO"
 }

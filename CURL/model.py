@@ -5,12 +5,13 @@ import math
 
 from util import ImageProcessing
 from model_ted import TEDModle
+from collections import namedtuple
 
 class CURLLoss(nn.Module):
     def __init__(self, ssim_win_size=5, alpha=0.5):
         super(CURLLoss, self).__init__()
         self.alpha = alpha
-        self.ssim_win_size = ssim_win_size
+        self.ssim_window_size = ssim_win_size
 
     def create_window(self, window_size, num_channel):
         _1D_window = self.gaussian(window_size, 1.5).unsqueeze(1)
@@ -75,9 +76,8 @@ class CURLLoss(nn.Module):
             raise RuntimeError(
                 'Input images must be Tensor, not %s' % img1.__class__.__name__)
 
-        weights = torch.FloatTensor(
-            [0.0448, 0.2856, 0.3001, 0.2363, 0.1333])
-        # weights = Variable(torch.FloatTensor([1.0, 1.0, 1.0, 1.0, 1.0]))
+        weights = torch.Tensor([0.0448, 0.2856, 0.3001, 0.2363, 0.1333])
+
         if img1.is_cuda:
             weights = weights.cuda(img1.get_device())
 
@@ -95,8 +95,8 @@ class CURLLoss(nn.Module):
         img1 = img1.contiguous()
         img2 = img2.contiguous()
 
-        mssim = torch.cat(mssim)
-        mcs = torch.cat(mcs)
+        mssim = torch.stack(mssim, dim=0)
+        mcs = torch.stack(mcs, dim=0)
 
         mssim = (mssim + 1) / 2
         mcs = (mcs + 1) / 2
@@ -122,19 +122,15 @@ class CURLLoss(nn.Module):
             # ndim=3
             predicted_img = predicted_img_batch[i, :, :, :].cuda()
 
-            predicted_img_lab = torch.clamp(
-                ImageProcessing.rgb_to_lab(predicted_img, 0, 1)
-            )
-            target_img_lab = torch.clamp(
-                ImageProcessing.rgb_to_lab(target_img, 0, 1)
-            )
+            predicted_img_lab = torch.clamp(ImageProcessing.rgb_to_lab(predicted_img), 0, 1)
 
-            predicted_img_hsv = torch.clamp(
-                ImageProcessing.rgb_to_hsv(predicted_img, 0, 1)
-            )
-            target_img_hsv = torch.clamp(
-                ImageProcessing.rgb_to_hsv(target_img, 0, 1)
-            )
+            target_img_lab = torch.clamp(ImageProcessing.rgb_to_lab(target_img), 0, 1)
+
+
+            predicted_img_hsv = torch.clamp(ImageProcessing.rgb_to_hsv(predicted_img), 0, 1)
+
+            target_img_hsv = torch.clamp(ImageProcessing.rgb_to_hsv(target_img), 0, 1)
+
 
             # ndim=3
             predicted_h = (predicted_img_hsv[0:1, :, :] * 2 * math.pi)
@@ -185,7 +181,11 @@ class CURLLoss(nn.Module):
         curl_loss = (rgb_loss_value + cosine_rgb_loss_value + l1_loss_value +
                      hsv_loss_value + 10 * ssim_loss_value + 1e-6 * gradient_regulariser) / 6
 
-        return curl_loss
+        losses = namedtuple("losses", ['l1', 'rgb', 'ssim', 'cosine_rgb', 'hsv', 'curl'])
+        output = losses(l1_loss_value, rgb_loss_value, ssim_loss_value,
+                        cosine_rgb_loss_value, hsv_loss_value, curl_loss)
+
+        return output
 
 class ConvBlock(nn.Module):
     def __init__(self, in_chans, out_chans, stride=2):
@@ -271,9 +271,7 @@ class CURLLayer(nn.Module):
         L = self.lab_fc(x)
 
         # curl adjustment in lab space
-        img_lab, gradient_regulariser_lab = ImageProcessing.adjust_lab(
-            img_lab, L[0, 0:48]
-        )
+        img_lab, gradient_regulariser_lab = ImageProcessing.adjust_lab(img_lab, L[0, 0:48])
         # ndim=3
         img_rgb = ImageProcessing.lab_to_rgb(img_lab)
         img_rgb = torch.clamp(img_rgb, 0, 1)

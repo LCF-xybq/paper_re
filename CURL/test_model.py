@@ -36,6 +36,7 @@ if __name__ == '__main__':
     ])
 
     gt_re = trans(gt)
+    print(img_tensor_batch.shape, output.shape)
 
     out = tensor2img(output, min_max=(-1, 1))
     ref = tensor2img(gt_re, min_max=(-1, 1))
