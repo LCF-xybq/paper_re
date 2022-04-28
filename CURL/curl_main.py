@@ -2,22 +2,26 @@ import json
 import os
 import sys
 import time
+
+import matplotlib.pyplot as plt
 import numpy as np
 import torch
 import torch.optim as optim
 import visdom
 import collections
+import cv2
 
 from torchvision import transforms
 from torch.utils.data import DataLoader
+from PIL import Image
 
 from utils.logger import get_root_logger
 from model import CURLNet, CURLLoss
 from utils.trans import Resize, RandomCrop, RandomFlip, ToTensor, Normalize
 from data_set import UWData
 from utils.Visualizer import Visualizer
-from utils.save_image import normimage
-from utils.checkpoint import save_epoch, save_latest
+from utils.save_image import normimage, tensor2img
+from utils.checkpoint import save_epoch, save_latest, load
 
 class JSONObject:
     def __init__(self, d):
@@ -151,7 +155,28 @@ def train(args):
 
 
 def test(args):
-    pass
+    net = CURLNet()
+    load(args.load_from, net, None)
+
+    trans = transforms.Compose([
+        ToTensor()
+    ])
+
+    dataset = UWData(args.ann_file, transform=trans)
+    test_loader = DataLoader(dataset, batch_size=1, num_workers=1)
+
+    net = net.cuda()
+
+    net.eval()
+    for i, data in enumerate(test_loader):
+        input = data['lr']
+        input = input.cuda()
+        with torch.no_grad():
+            output,_ = net(input)
+
+        res = normimage(output, save_cfg=False)
+        savepath = os.path.join(args.save_pth, str(i) + '.png')
+        plt.imsave(savepath, res)
 
 def main():
     args = getargs()
